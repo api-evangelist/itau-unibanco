@@ -1,0 +1,79 @@
+generated: '2026-10-18'
+method: derived
+generator: derive-problem-types.py
+source:
+- openapi/itau-unibanco-open-finance-channels-openapi.yml
+- openapi/itau-unibanco-open-finance-common-openapi.yml
+- openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml
+- openapi/itau-unibanco-open-finance-opendata-creditcards-openapi.yml
+- openapi/itau-unibanco-open-finance-opendata-financings-openapi.yml
+- openapi/itau-unibanco-open-finance-opendata-invoicefinancings-openapi.yml
+- openapi/itau-unibanco-open-finance-opendata-loans-openapi.yml
+- openapi/itau-unibanco-open-finance-opendata-unarranged-openapi.yml
+format: custom
+envelope:
+  media_type: application/json; charset=utf-8
+  schema: ResponseError
+coverage:
+  operations: 17
+  statuses_declared: 8
+problems:
+- status: 400
+  title: Bad Request
+  description: A requisição foi malformada, omitindo atributos obrigatórios, seja no payload ou através de atributos
+    na URL.
+  operations: 17
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 404
+  title: Not Found
+  description: O recurso solicitado não existe ou não foi implementado.
+  operations: 17
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 405
+  title: Method Not Allowed
+  description: O consumidor tentou acessar o recurso com um método não suportado.
+  operations: 17
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 429
+  title: Too Many Requests
+  description: A operação foi recusada, pois muitas solicitações foram feitas dentro de um determinado período ou
+    o limite global de requisições concorrent
+  operations: 17
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 500
+  title: Internal Server Error
+  description: Ocorreu um erro no gateway da API ou no microsserviço.
+  operations: 17
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 504
+  title: Gateway Timeout
+  description: GATEWAY TIMEOUT - A requisição não foi atendida dentro do tempo limite estabelecido.
+  operations: 17
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError
+- status: 529
+  title: null
+  description: O site está sobrecarregado e a operação foi recusada, pois foi atingido o limite máximo de TPS global,
+    neste momento.
+  operations: 17
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseErrorMetaSingle
+- status: default
+  title: null
+  description: \-
+  operations: 17
+  media_types:
+  - application/json; charset=utf-8
+  schema: ResponseError

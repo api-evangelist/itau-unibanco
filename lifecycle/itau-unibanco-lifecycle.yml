@@ -1,0 +1,17 @@
+generated: '2026-10-18'
+method: searched
+source: https://devportal.itau.com.br/nossas-apis/openfinance
+versioning:
+  scheme: url-versioning
+  current: v2 (channels, common), v1 (opendata APIs)
+  evidence: 'API URLs include version segments: /open-banking/channels/v2/, /open-banking/opendata-accounts/v1/'
+deprecation:
+  policy: Not documented publicly
+  evidence: 'No public deprecation policy found on developer portal'
+status_page:
+  url: https://devportal.itau.com.br/nossas-apis/openfinance
+  evidence: 'Open Finance page shows API status: "todas as APIs estão estáticas" (all APIs are stable) with last update timestamp'
+sla:
+  published: false
+  evidence: 'No SLA documentation found on public developer portal pages'
+note: 'Most API documentation requires login to access. Public Open Finance APIs follow Open Finance Brasil standards with versioning in URLs.'

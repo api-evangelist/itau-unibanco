@@ -1,0 +1,27 @@
+overlay: 1.0.0
+info:
+  title: Itaú Unibanco API OpenData Unarranged Account Overdraft do Open Finance Brasil​ overlay
+  version: 1.0.0
+extends: ../openapi/_original/itau-unibanco-open-finance-opendata-unarranged-openapi.yml
+x-generated: '2026-10-18'
+x-method: generated
+actions:
+- target: $.info
+  update:
+    x-provider: Itaú Unibanco
+    x-provider-slug: itau-unibanco
+    x-standard: Open Finance Brasil (OpenBanking-Brasil/openapi)
+    x-api-evangelist-note: Itaú implements the Open Finance Brasil standard contract; this overlay annotates the standard spec, it does not modify
+      it.
+- target: $.paths['/personal-unarranged-account-overdraft'].get
+  update:
+    x-agent-tool-name: get_personal_unarranged_account_overdraft
+    x-agent-read-only: true
+    x-agent-auth: none declared (spec defines APIKey schemes but applies no security requirement)
+    x-idempotent: true
+- target: $.paths['/business-unarranged-account-overdraft'].get
+  update:
+    x-agent-tool-name: get_business_unarranged_account_overdraft
+    x-agent-read-only: true
+    x-agent-auth: none declared (spec defines APIKey schemes but applies no security requirement)
+    x-idempotent: true

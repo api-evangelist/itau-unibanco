@@ -1,0 +1,421 @@
+generated: '2026-10-18'
+method: derived
+generator: derive-vocabulary.py
+source:
+- openapi/itau-unibanco-open-finance-channels-openapi.yml
+- openapi/itau-unibanco-open-finance-common-openapi.yml
+- openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml
+- openapi/itau-unibanco-open-finance-opendata-creditcards-openapi.yml
+- openapi/itau-unibanco-open-finance-opendata-financings-openapi.yml
+vocabulary:
+  name: Itaú Unibanco Domain Vocabulary
+  description: 'Terms declared by Itaú Unibanco''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
+    Derived, not authored.'
+  version: '2026-10-18'
+  terms:
+  - term: Channels
+    definition: Operações para listagem de canais de atendimento
+    tags:
+    - Resource Group
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml
+  - term: Accounts
+    definition: Operações para listagem de contas.
+    tags:
+    - Resource Group
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml
+  - term: Credit Cards
+    definition: Operações para listagem de cartões de crédito.
+    tags:
+    - Resource Group
+    source: openapi/itau-unibanco-open-finance-opendata-creditcards-openapi.yml
+  - term: Financings
+    definition: Operações para listagem financiamentos
+    tags:
+    - Resource Group
+    source: openapi/itau-unibanco-open-finance-opendata-financings-openapi.yml
+  - term: Invoice Financings
+    definition: Operações para listagem de Direitos Creditórios Descontados.
+    tags:
+    - Resource Group
+    source: openapi/itau-unibanco-open-finance-opendata-invoicefinancings-openapi.yml
+  - term: Loans
+    definition: Operações para listagem empréstimos
+    tags:
+    - Resource Group
+    source: openapi/itau-unibanco-open-finance-opendata-loans-openapi.yml
+  - term: ResponseBankingAgentsList
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/ResponseBankingAgentsList
+  - term: BankingAgentsData
+    definition: Conjunto de informações referente aos correspondentes bancários da Instituição
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BankingAgentsData
+  - term: BankingAgentsParticipant
+    definition: Conjunto de informações relativas ao participante do produto de Open Finance
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BankingAgentsParticipant
+  - term: BankingAgentsContractor
+    definition: 'Object declared by the contract with fields: name, cnpjNumber.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BankingAgentsContractor
+  - term: ResponseBranchesList
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/ResponseBranchesList
+  - term: BranchesData
+    definition: 'Object declared by the contract with fields: participant, identification, postalAddress, availability, phones, services.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BranchesData
+  - term: BranchesParticipant
+    definition: Conjunto de informações relativas ao participante do produto de Open Finance
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BranchesParticipant
+  - term: ResponseElectronicChannelsList
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/ResponseElectronicChannelsList
+  - term: ElectronicChannelsData
+    definition: 'Object declared by the contract with fields: participant, identification, services.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/ElectronicChannelsData
+  - term: ElectronicChannelsParticipant
+    definition: Conjunto de informações relativas ao participante do produto de Open Finance
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/ElectronicChannelsParticipant
+  - term: BankingAgent
+    definition: 'Object declared by the contract with fields: identification, locations, services, contractors.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BankingAgent
+  - term: BankingAgentIdentification
+    definition: Lojas do correspondente bancário
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BankingAgentIdentification
+  - term: BankingAgentLocation
+    definition: 'Object declared by the contract with fields: postalAddress, availability, phones.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BankingAgentLocation
+  - term: BankingAgentPostalAddress
+    definition: Informação referente ao endereço postal
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BankingAgentPostalAddress
+  - term: BankingAgentAvailability
+    definition: Horário de funcionamento das operações
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BankingAgentAvailability
+  - term: BankingAgentService
+    definition: 'Object declared by the contract with fields: name, code, additionalInfo.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BankingAgentService
+  - term: BranchPostalAddress
+    definition: Informação referente ao endereço postal
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BranchPostalAddress
+  - term: BranchPhone
+    definition: 'Object declared by the contract with fields: type, countryCallingCode, areaCode, number.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BranchPhone
+  - term: BranchIdentification
+    definition: Identificação das dependência próprias
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BranchIdentification
+  - term: BranchAvailability
+    definition: Horário de funcionamento das operações
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BranchAvailability
+  - term: BranchService
+    definition: 'Object declared by the contract with fields: name, code, additionalInfo.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/BranchService
+  - term: ElectronicChannelIdentification
+    definition: Identificação dos canais eletrônicos para atendimento
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/ElectronicChannelIdentification
+  - term: ElectronicChannelService
+    definition: 'Object declared by the contract with fields: name, code, additionalInfo.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/ElectronicChannelService
+  - term: Phone
+    definition: Lista de telefones do agente bancária
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/Phone
+  - term: ResponseSharedAutomatedTellerMachinesList
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/ResponseSharedAutomatedTellerMachinesList
+  - term: SharedAutomatedTellerMachinesData
+    definition: 'Object declared by the contract with fields: participant, identification, postalAddress, availability, services.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/SharedAutomatedTellerMachinesData
+  - term: SharedAutomatedTellerMachinesParticipant
+    definition: Conjunto de informações relativas ao participante do produto de Open Finance
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/SharedAutomatedTellerMachinesParticipant
+  - term: SharedAutomatedTellerMachinesServices
+    definition: Traz a relação de serviços disponibilizados pelo Canal de Atendimento
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/SharedAutomatedTellerMachinesServices
+  - term: SharedAutomatedTellerMachinesIdentification
+    definition: Identificação dos terminais de autoatendimento compartilhados
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/SharedAutomatedTellerMachinesIdentification
+  - term: ResponsePhoneChannelsList
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/ResponsePhoneChannelsList
+  - term: PhoneChannelsData
+    definition: 'Object declared by the contract with fields: participant, identification, services.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/PhoneChannelsData
+  - term: PhoneChannelsParticipant
+    definition: Conjunto de informações relativas ao participante do produto de Open Finance
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/PhoneChannelsParticipant
+  - term: PhoneChannelIdentification
+    definition: Identificação dos canais telefônicos de atendimento
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/PhoneChannelIdentification
+  - term: PhoneChannelPhone
+    definition: 'Object declared by the contract with fields: countryCallingCode, areaCode, number, additionalInfo.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/PhoneChannelPhone
+  - term: PhoneChannelService
+    definition: 'Object declared by the contract with fields: name, code, additionalInfo.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/PhoneChannelService
+  - term: GeographicCoordinates
+    definition: Informação referente a geolocalização informada.
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/GeographicCoordinates
+  - term: Links
+    definition: Referências para outros recursos da API requisitada
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/Links
+  - term: Meta
+    definition: Meta informações referente à API requisitada
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/Meta
+  - term: SharedAutomatedTellerMachinesAvailability
+    definition: Horário de funcionamento das operações
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/SharedAutomatedTellerMachinesAvailability
+  - term: SharedAutomatedTellerMachinesPostalAddress
+    definition: Informação referente ao endereço postal
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/SharedAutomatedTellerMachinesPostalAddress
+  - term: ResponseErrorMetaSingle
+    definition: 'Object declared by the contract with fields: errors, meta.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/ResponseErrorMetaSingle
+  - term: ResponseError
+    definition: 'Object declared by the contract with fields: errors, meta.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-channels-openapi.yml#/components/schemas/ResponseError
+  - term: ResponseDiscoveryStatusList
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-common-openapi.yml#/components/schemas/ResponseDiscoveryStatusList
+  - term: ResponseDiscoveryOutageList
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-common-openapi.yml#/components/schemas/ResponseDiscoveryOutageList
+  - term: Status
+    definition: 'Object declared by the contract with fields: code, explanation, detectionTime, expectedResolutionTime, updateTime, unavailableEndpoints.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-common-openapi.yml#/components/schemas/Status
+  - term: AccountsTermsConditions
+    definition: Objeto que reúne informações relativas a Termos e Condições para as modalidades tratadas
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/AccountsTermsConditions
+  - term: ResponsePersonalAccounts
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/ResponsePersonalAccounts
+  - term: PersonalData
+    definition: 'Object declared by the contract with fields: participant, type, fees, serviceBundles, openingClosingChannels, openingClosingChannelsAdditionalInfo,
+      transactionMethods, termsConditions, incomeRate.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/PersonalData
+  - term: AccountFee
+    definition: Objeto que reúne informações de tarifas de serviços.
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/AccountFee
+  - term: AccountPriorityService
+    definition: 'Object declared by the contract with fields: name, code, chargingTriggerInfo, prices, minimum, maximum.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/AccountPriorityService
+  - term: AccountType
+    definition: Tipos de contas ofertadas para pessoa natural ou jurídica, p.ex. 'CONTA_DEPOSITO_A_VISTA'. Conta de depósito à vista ou Conta
+      corrente - é o tipo mais comum. Nela, o dinheiro fica à sua disposição para ser sacado a qualquer momento. Essa conta não gera rendimentos
+      para o depositante Conta poupança - foi criada para estimular as pessoas a pouparem. O dinheiro que ficar na conta por trinta dias pass
+    tags:
+    - Enumeration
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/AccountType
+  - term: OpeningClosingChannels
+    definition: Canais disponíveis para abertura e encerramento de contas, p.ex. 'DEPENDENCIAS_PROPRIAS'
+    tags:
+    - Enumeration
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/OpeningClosingChannels
+  - term: TransactionMethods
+    definition: Lista de formas de movimentação possíveis para a conta
+    tags:
+    - Enumeration
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/TransactionMethods
+  - term: PriorityServiceName
+    definition: Nome dos Serviços prioritários, segundo Resolução 3.919 do Bacen, para pessoa natural.
+    tags:
+    - Enumeration
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/PriorityServiceName
+  - term: AccountOtherService
+    definition: 'Object declared by the contract with fields: name, code, chargingTriggerInfo, prices, minimum, maximum.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/AccountOtherService
+  - term: AccountPriorityServiceCode
+    definition: Lista das Siglas de identificação do Serviço Prioritário, segundo Resolução 3.919 do Bacen.
+    tags:
+    - Enumeration
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/AccountPriorityServiceCode
+  - term: ServiceBundle
+    definition: 'Object declared by the contract with fields: name, services, prices, minimum, maximum.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/ServiceBundle
+  - term: ServiceBundleServiceDetail
+    definition: 'Object declared by the contract with fields: code, chargingTriggerInfo, eventLimitQuantity, freeEventQuantity.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/ServiceBundleServiceDetail
+  - term: AccountsIncomeRate
+    definition: 'Object declared by the contract with fields: savingAccount, prepaidPaymentAccount.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/AccountsIncomeRate
+  - term: ResponseBusinessAccounts
+    definition: 'Object declared by the contract with fields: data, links, meta.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/ResponseBusinessAccounts
+  - term: BusinessData
+    definition: 'Object declared by the contract with fields: participant, type, fees, serviceBundles, openingClosingChannels, openingClosingChannelsAdditionalInfo,
+      transactionMethods, termsConditions, incomeRate.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/BusinessData
+  - term: BusinessAccountsService
+    definition: 'Object declared by the contract with fields: name, code, chargingTriggerInfo, prices, minimum, maximum.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/BusinessAccountsService
+  - term: PriceIntervals
+    definition: 'Segundo Normativa nº 32, BCB, de 2020: Distribuição de frequência relativa dos valores de tarifas cobradas dos clientes, de que
+      trata o § 2º do art. 3º da Circular nº 4.015, de 2020, deve dar-se com base em quatro faixas de igual tamanho, com explicitação dos valores
+      sobre a mediana em cada uma dessas faixas. Informando: 1ª faixa, 2ª faixa, 3ª faixa e 4ª faixa'
+    tags:
+    - Enumeration
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/PriceIntervals
+  - term: Price
+    definition: 'Object declared by the contract with fields: interval, value, currency, customers.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/Price
+  - term: PersonalAccountPriorityServicePrice
+    definition: 'Object declared by the contract with fields: interval, value, currency, customers.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/PersonalAccountPriorityServicePrice
+  - term: MonthlyPrice
+    definition: 'Object declared by the contract with fields: interval, monthlyFee, currency, customers.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/MonthlyPrice
+  - term: MinimumPrice
+    definition: 'Object declared by the contract with fields: value, currency.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/MinimumPrice
+  - term: PriorityServiceMinimumPrice
+    definition: 'Object declared by the contract with fields: value, currency.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/PriorityServiceMinimumPrice
+  - term: MaximumPrice
+    definition: 'Object declared by the contract with fields: value, currency.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/MaximumPrice
+  - term: PriorityServiceMaximumPrice
+    definition: 'Object declared by the contract with fields: value, currency.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/PriorityServiceMaximumPrice
+  - term: Customer
+    definition: Informações relevantes para o cliente.
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/Customer
+  - term: MinimumBalance
+    definition: 'Object declared by the contract with fields: value, currency.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/MinimumBalance
+  - term: Currency
+    definition: Moeda referente ao valor mínimo da Tarifa, segundo modelo ISO-4217
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml#/components/schemas/Currency
+  - term: ApplicationRate
+    definition: 'Object declared by the contract with fields: interval, indexer, customers.'
+    tags:
+    - Object
+    source: openapi/itau-unibanco-open-finance-opendata-creditcards-openapi.yml#/components/schemas/ApplicationRate

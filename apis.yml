@@ -1,23 +1,533 @@
 aid: itau-unibanco
+
 name: Itaú Unibanco
-description: 'Itaú Unibanco is a company surfaced via the API Evangelist harvest backlog (source: kin-score-markets)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Itaú Unibanco Holding S.A. (CNPJ 60.872.504/0001-23, São Paulo, Brazil) is Brazil's largest private bank, describing itself as the
+  largest bank in Latin America. Through its developer portal, Itaú for Developers (devportal.itau.com.br), it offers companies APIs for Pix receipts
+  and payments, payment initiation, payroll-deductible credit (consignado), credit recovery, collateral lookup, treasury bank cash supply, third-party
+  fund custody, foreign exchange and trade, plus Open Finance and managed file transfer, with a sandbox environment, self-registration and getting-started
+  guides covering credentials and dynamic certificates.
+
 url: https://raw.githubusercontent.com/api-evangelist/itau-unibanco/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:kin-score-markets
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-18 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-18'
+
 modified: '2026-10-18'
+
 tags:
 - Company
-apis: []
+- Banking
+- Financial Services
+- Payments
+- Pix
+- Open Finance
+- Brazil
+- Foreign Exchange
+- Credit
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://avatars.githubusercontent.com/u/74078611?v=4
+
 common:
+- type: AgenticAccess
+  url: agentic-access/itau-unibanco-agentic-access.yml
+- type: Spectral
+  url: rules/itau-unibanco-rules.yml
+- type: JSONLD
+  url: json-ld/itau-unibanco-context.jsonld
+- type: Vocabulary
+  url: vocabulary/itau-unibanco-vocabulary.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: DataModel
+  url: data-model/itau-unibanco-data-model.yml
+- type: Conventions
+  url: conventions/itau-unibanco-conventions.yml
+- type: Sandbox
+  url: sandbox/itau-unibanco-sandbox.yml
+- type: Deprecation
+  url: lifecycle/itau-unibanco-lifecycle.yml
+- type: StatusPage
+  url: https://devportal.itau.com.br/nossas-apis/openfinance
+- type: Lifecycle
+  url: lifecycle/itau-unibanco-lifecycle.yml
+- type: ErrorCatalog
+  url: errors/itau-unibanco-problem-types.yml
+- type: Conformance
+  url: conformance/itau-unibanco-conformance.yml
+- type: Overlay
+  url: overlays/itau-unibanco-open-finance-channels-overlay.yaml
+- type: LLMsTxt
+  url: llms/itau-unibanco-llms.txt
+- type: Hosts
+  url: hosts/itau-unibanco-hosts.yml
+- type: Vendors
+  url: vendors/itau-unibanco-vendors.yml
+- type: Authentication
+  url: authentication/itau-unibanco-authentication.yml
 - type: Website
-  url: https://itau.com.br
+  url: https://www.itau.com.br
+- type: DomainSecurity
+  url: security/itau-unibanco-domain-security.yml
+- type: DeveloperPortal
+  url: https://devportal.itau.com.br/
+- type: Documentation
+  url: https://devportal.itau.com.br/conheca-o-portal
+- type: GettingStarted
+  url: https://devportal.itau.com.br/como-se-conectar-as-apis-itau
+- type: Support
+  url: https://devportal.itau.com.br/suportefaq
+- type: SignUp
+  url: https://devportal.itau.com.br/baas/#/create-account/personal-information
+- type: Login
+  url: https://devportal.itau.com.br/login
+- type: TermsOfService
+  url: https://devportal.itau.com.br/termos-de-uso
+- type: PrivacyPolicy
+  url: https://devportal.itau.com.br/politicas
+- type: GitHubOrganization
+  url: https://github.com/itau
+- type: Twitter
+  url: https://twitter.com/itau
+- type: YouTube
+  url: https://www.youtube.com/itau
+
+apis:
+- aid: itau-unibanco:corporate-apis
+  name: Itaú for Developers Corporate APIs
+  description: >-
+    Itaú's corporate API catalog on Itaú for Developers: Pix receipts and payments, payment initiation,
+    payroll-deductible credit (consignado), credit recovery, collateral lookup, treasury bank cash supply,
+    third-party fund custody, and foreign exchange and trade. Per-API reference pages (devportal.itau.com.br/nossas-apis/<api>)
+    require a portal login; the getting-started guide documents the call pattern https://api.itau.com.br/{api}/{versao}/{recurso}
+    with OAuth2 client credentials from https://sts.itau.com.br/api/oauth/token and mTLS certificates.
+    No machine-readable contract is publicly available.
+  humanURL: https://devportal.itau.com.br/baas/#/catalog
+  baseURL: https://api.itau.com.br/{api}/{versao}/{recurso}
+  tags:
+  - Pix
+  - Payments
+  - Credit
+  - Foreign Exchange
+  - Fund
+  tags_raw:
+  - Pix
+  - Payments
+  - Credit
+  - Foreign Exchange
+  - Funds
+  properties:
+  - type: Documentation
+    url: https://devportal.itau.com.br/como-fazer-a-primeira-chamada-a-uma-api
+  - type: GettingStarted
+    url: https://devportal.itau.com.br/como-se-conectar-as-apis-itau
+  - type: Documentation
+    name: API certificate chain update (new gateway hosts)
+    url: https://devportal.itau.com.br/certificados-apis-expiracao-2026
+- aid: itau-unibanco:itau-unibanco-accounts-api
+  name: Itaú Unibanco Accounts API
+  description: Operações para listagem de contas.
+  humanURL: https://devportal.itau.com.br/nossas-apis/openfinance
+  baseURL: https://api.itau/open-banking/channels/v2
+  tags:
+  - Accounts
+  properties:
+  - type: OpenAPI
+    url: openapi/itau-unibanco-accounts-api-openapi.yml
+  - type: Documentation
+    url: https://devportal.itau.com.br/nossas-apis/openfinance
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-electronic-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-phone-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-branches-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-banking-agents-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-outage-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-status-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-business-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-personal-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-invoice-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-unarranged-account-overdraft-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-unarranged-account-overdraft-schema.json
+- aid: itau-unibanco:itau-unibanco-channels-api
+  name: Itaú Unibanco Channels API
+  description: Operações para listagem de canais de atendimento
+  humanURL: https://devportal.itau.com.br/nossas-apis/openfinance
+  baseURL: https://api.itau/open-banking/channels/v2
+  tags:
+  - Channels
+  properties:
+  - type: OpenAPI
+    url: openapi/itau-unibanco-channels-api-openapi.yml
+  - type: Documentation
+    url: https://devportal.itau.com.br/nossas-apis/openfinance
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-electronic-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-phone-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-branches-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-banking-agents-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-outage-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-status-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-business-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-personal-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-invoice-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-unarranged-account-overdraft-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-unarranged-account-overdraft-schema.json
+- aid: itau-unibanco:itau-unibanco-credit-cards-api
+  name: Itaú Unibanco Credit Cards API
+  description: Operações para listagem de cartões de crédito.
+  humanURL: https://devportal.itau.com.br/nossas-apis/openfinance
+  baseURL: https://api.itau/open-banking/channels/v2
+  tags:
+  - Credit Cards
+  properties:
+  - type: OpenAPI
+    url: openapi/itau-unibanco-credit-cards-api-openapi.yml
+  - type: Documentation
+    url: https://devportal.itau.com.br/nossas-apis/openfinance
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-electronic-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-phone-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-branches-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-banking-agents-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-outage-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-status-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-business-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-personal-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-invoice-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-unarranged-account-overdraft-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-unarranged-account-overdraft-schema.json
+- aid: itau-unibanco:itau-unibanco-discovery-api
+  name: Itaú Unibanco Discovery API
+  description: The Discovery API from Itaú Unibanco — 2 operation(s) for discovery.
+  humanURL: https://devportal.itau.com.br/nossas-apis/openfinance
+  baseURL: https://api.itau/open-banking/channels/v2
+  tags:
+  - Discovery
+  properties:
+  - type: OpenAPI
+    url: openapi/itau-unibanco-discovery-api-openapi.yml
+  - type: Documentation
+    url: https://devportal.itau.com.br/nossas-apis/openfinance
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-electronic-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-phone-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-branches-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-banking-agents-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-outage-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-status-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-business-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-personal-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-invoice-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-unarranged-account-overdraft-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-unarranged-account-overdraft-schema.json
+- aid: itau-unibanco:itau-unibanco-financings-api
+  name: Itaú Unibanco Financings API
+  description: Operações para listagem financiamentos
+  humanURL: https://devportal.itau.com.br/nossas-apis/openfinance
+  baseURL: https://api.itau/open-banking/channels/v2
+  tags:
+  - Financings
+  properties:
+  - type: OpenAPI
+    url: openapi/itau-unibanco-financings-api-openapi.yml
+  - type: Documentation
+    url: https://devportal.itau.com.br/nossas-apis/openfinance
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-electronic-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-phone-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-branches-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-banking-agents-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-outage-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-status-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-business-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-personal-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-invoice-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-unarranged-account-overdraft-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-unarranged-account-overdraft-schema.json
+- aid: itau-unibanco:itau-unibanco-invoice-financings-api
+  name: Itaú Unibanco Invoice Financings API
+  description: Operações para listagem de Direitos Creditórios Descontados.
+  humanURL: https://devportal.itau.com.br/nossas-apis/openfinance
+  baseURL: https://api.itau/open-banking/channels/v2
+  tags:
+  - Invoice Financings
+  properties:
+  - type: OpenAPI
+    url: openapi/itau-unibanco-invoice-financings-api-openapi.yml
+  - type: Documentation
+    url: https://devportal.itau.com.br/nossas-apis/openfinance
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-electronic-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-phone-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-branches-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-banking-agents-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-outage-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-status-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-business-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-personal-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-invoice-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-unarranged-account-overdraft-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-unarranged-account-overdraft-schema.json
+- aid: itau-unibanco:itau-unibanco-loans-api
+  name: Itaú Unibanco Loans API
+  description: Operações para listagem empréstimos
+  humanURL: https://devportal.itau.com.br/nossas-apis/openfinance
+  baseURL: https://api.itau/open-banking/channels/v2
+  tags:
+  - Loans
+  properties:
+  - type: OpenAPI
+    url: openapi/itau-unibanco-loans-api-openapi.yml
+  - type: Documentation
+    url: https://devportal.itau.com.br/nossas-apis/openfinance
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-electronic-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-phone-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-branches-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-banking-agents-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-outage-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-status-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-business-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-personal-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-invoice-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-unarranged-account-overdraft-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-unarranged-account-overdraft-schema.json
+- aid: itau-unibanco:itau-unibanco-unarranged-account-overdraft-api
+  name: Itaú Unibanco Unarranged Account Overdraft API
+  description: >-
+    The Unarranged Account Overdraft API from Itaú Unibanco — 2 operation(s) for unarranged account overdraft.
+  humanURL: https://devportal.itau.com.br/nossas-apis/openfinance
+  baseURL: https://api.itau/open-banking/channels/v2
+  tags:
+  - Unarranged Account Overdraft
+  properties:
+  - type: OpenAPI
+    url: openapi/itau-unibanco-unarranged-account-overdraft-api-openapi.yml
+  - type: Documentation
+    url: https://devportal.itau.com.br/nossas-apis/openfinance
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-electronic-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-phone-channels-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-branches-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-banking-agents-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-outage-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-discovery-status-list-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-accounts-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-business-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-personal-credit-card-response-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-invoice-financings-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-loans-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-business-unarranged-account-overdraft-schema.json
+  - type: JSONSchema
+    url: json-schema/itau-unibanco-response-personal-unarranged-account-overdraft-schema.json
+x-coverage:
+  state: covered
+  reason: identity-established
+  detail: Corporate site www.itau.com.br / itau.com.br answers HTTP 403 (bot challenge) to a browser UA; identity and pointers taken from the
+    open developer portal devportal.itau.com.br (JS-rendered, read via headless render), whose footer names Itaú Unibanco Holding S.A. API catalog/documentation
+    pages are login-gated.
+  evidence:
+  - url: https://www.itau.com.br
+    status: 403
+  - url: https://itau.com.br
+    status: 403
+  - url: https://devportal.itau.com.br/baas/
+    status: 200
+  - url: https://devportal.itau.com.br/baas/#/catalog
+    status: 200
+    note: redirects to /login?callbackUrl=...
+  - url: https://github.com/itau
+    status: 200
+x-enrichment:
+  date: '2026-10-18'
+  status: enriched
+  artifacts_added: 75
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=deepseek,regulatory=anthropic

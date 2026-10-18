@@ -1,0 +1,10 @@
+generated: '2026-10-18'
+method: searched
+source: https://devportal.itau.com.br/nossas-apis/openfinance
+name: 'Itaú Unibanco rate limits'
+limit_count: 0
+limits: []
+headers:
+  - '429: TooManyRequests (defined in OpenAPI specifications)'
+  - 'Retry-After: Not documented'
+note: 'Rate limits not documented publicly. OpenAPI specifications include 429 (TooManyRequests) response definition but no specific limits are published. Limits likely vary by API and commercial agreement. Source page accessible but contains no rate limit information.'

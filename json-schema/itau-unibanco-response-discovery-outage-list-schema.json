@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/itau-unibanco/main/json-schema/itau-unibanco-response-discovery-outage-list-schema.json",
+  "title": "ResponseDiscoveryOutageList",
+  "x-generated": "2026-10-18",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/itau-unibanco-open-finance-common-openapi.yml#/components/schemas/ResponseDiscoveryOutageList",
+  "type": "object",
+  "required": [
+    "data",
+    "links",
+    "meta"
+  ],
+  "properties": {
+    "data": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "type": "object",
+        "required": [
+          "outageTime",
+          "duration",
+          "isPartial",
+          "explanation"
+        ],
+        "properties": {
+          "outageTime": {
+            "type": "string",
+            "pattern": "^(\\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\\d|2[0123]):(?:[012345]\\d):(?:[012345]\\d)Z$",
+            "description": "Data e hora planejada do início da indisponibilidade"
+          },
+          "duration": {
+            "type": "string",
+            "pattern": "^(?!\\s)[\\w\\W\\s]*[^\\s]$",
+            "description": "Duração prevista da indisponibilidade"
+          },
+          "isPartial": {
+            "type": "boolean",
+            "description": "Flag que indica se a indisponibilidade é parcial (atingindo apenas alguns end points) ou total (atingindo todos os end points)"
+          },
+          "explanation": {
+            "type": "string",
+            "pattern": "^(?!\\s)[\\w\\W\\s]*[^\\s]$",
+            "description": "Explicação sobre os motivos da indisponibilidade, podendo a instituição indicar quais implementações estarão indisponíveis."
+          }
+        }
+      }
+    },
+    "links": {
+      "$ref": "#/$defs/Links"
+    },
+    "meta": {
+      "$ref": "#/$defs/Meta"
+    }
+  },
+  "$defs": {
+    "Links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string",
+          "format": "url",
+          "description": "URL da página atualmente requisitada",
+          "maxLength": 2000
+        },
+        "first": {
+          "type": "string",
+          "format": "url",
+          "description": "URL da primeira página de registros",
+          "maxLength": 2000
+        },
+        "prev": {
+          "type": "string",
+          "format": "url",
+          "description": "URL da página anterior de registros",
+          "maxLength": 2000
+        },
+        "next": {
+          "type": "string",
+          "format": "url",
+          "description": "URL da próxima página de registros",
+          "maxLength": 2000
+        },
+        "last": {
+          "type": "string",
+          "format": "url",
+          "description": "URL da última página de registros",
+          "maxLength": 2000
+        }
+      }
+    },
+    "Meta": {
+      "type": "object",
+      "properties": {
+        "totalRecords": {
+          "type": "integer",
+          "description": "Total de registros encontrados"
+        },
+        "totalPages": {
+          "type": "integer",
+          "description": "Total de páginas para os registros encontrados"
+        }
+      },
+      "required": [
+        "totalRecords",
+        "totalPages"
+      ]
+    }
+  }
+}

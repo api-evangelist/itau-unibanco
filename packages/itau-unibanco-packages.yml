@@ -1,0 +1,21 @@
+generated: '2026-10-18'
+method: none
+source: https://devportal.itau.com.br/, https://github.com/itau, https://registry.npmjs.org/-/v1/search?text=itau
+packages: []
+note: 'no first-party package: every candidate a model listed was unowned (harvest-packages.py --audit)'
+rejected:
+- name: '@codespar/mcp-itau'
+  registry: npm
+  reason: 'official: false as written'
+- name: itau2moneylog
+  registry: npm
+  reason: 'official: false as written'
+- name: itau-shopline
+  registry: npm
+  reason: 'official: false as written'
+- name: cnab400-itau-parser
+  registry: npm
+  reason: 'official: false as written'
+- name: br.com.objectos.cnab:itau
+  registry: maven
+  reason: 'official: false as written'

@@ -1,0 +1,5 @@
+generated: '2026-10-18'
+method: none
+source: https://devportal.itau.com.br/nossas-apis/openfinance
+scopes: []
+note: 'No OAuth scopes found in OpenAPI specifications. Open Finance APIs use API key authentication, not OAuth.'

@@ -1,0 +1,83 @@
+generated: '2026-10-18'
+method: searched
+source:
+  - https://devportal.itau.com.br/politicas
+  - https://devportal.itau.com.br/termos-de-uso
+checked: '2026-10-18'
+harvest_only: true
+summary: >-
+  Read from the Itaú Unibanco developer portal's own Privacy Policy (Política de
+  Privacidade, "Atualização: agosto de 2020") under Brazil's LGPD (Lei nº 13.709/18).
+  The policy lists LGPD data-subject rights, including portability and review of
+  decisions made solely by automated processing. It says personal data may be
+  transferred and processed abroad, and it ties retention to purpose without a fixed
+  period. It names a DPO (Encarregado) contact. The developer Terms of Use
+  (termos-de-uso) are API/sandbox licence terms and say nothing about these signals.
+  Neither page addresses subprocessors (beyond a right to ask which entities data was
+  shared with), incident notification to customers, accessibility, SBOM, GPC, AI
+  transparency or a transparency report. The corporate site itau.com.br answered the
+  pre-flight browser UA with HTTP 403 (bot challenge), so its privacy hub
+  (www.itau.com.br/seguranca/privacidade, which the policy references) was not read.
+signals:
+  data_subject_request:
+    present: true
+    url: https://devportal.itau.com.br/politicas
+    section: 9. Seus direitos
+    note: >-
+      Lists the LGPD rights: access, correction, anonymisation/blocking/deletion,
+      portability, information on sharing, consent revocation, objection, and review
+      of automated decisions such as credit decisions. Requests go through customer
+      service channels. The policy says some data may be kept despite deletion
+      requests. Contact for the Encarregado (DPO): encarregado-dados@itau.com.br.
+    evidence:
+      - source: https://devportal.itau.com.br/politicas
+        http_status: 200
+        fetched: '2026-10-18'
+        quote: "portabilidade dos dados, observadas as normas aplicáveis e os segredos comercial e industrial;"
+      - source: https://devportal.itau.com.br/politicas
+        http_status: 200
+        fetched: '2026-10-18'
+        quote: "solicitar a revisão de decisões tomadas unicamente com base em Tratamento automatizado de Dados Pessoais que o afetem, como decisões de crédito;"
+      - source: https://devportal.itau.com.br/politicas
+        http_status: 200
+        fetched: '2026-10-18'
+        quote: "Para exercer seus direitos sobre os seus Dados Pessoais, você pode acionar os nossos canais de atendimento."
+      - source: https://devportal.itau.com.br/politicas
+        http_status: 200
+        fetched: '2026-10-18'
+        quote: "Para obter mais informações sobre a Política ou sobre como tratamos os seus dados pessoais, você pode entrar em contato no e-mail encarregado-dados@itau.com.br com o título “aos cuidados do Encarregado”."
+  data_residency:
+    present: true
+    url: https://devportal.itau.com.br/politicas
+    section: 6. Transferência internacional de dados
+    note: >-
+      This is NOT a residency commitment. The policy says personal data may be
+      transferred to and processed in other countries under LGPD transfer grounds,
+      including for the bank's own activities with protective measures. No region
+      selection or in-country storage guarantee is offered.
+    evidence:
+      - source: https://devportal.itau.com.br/politicas
+        http_status: 200
+        fetched: '2026-10-18'
+        quote: "Os seus Dados Pessoais poderão ser transferidos e Tratados em outros países, de acordo com as hipóteses previstas na LGPD e legislação aplicável, para as finalidades previstas nesta Política de Privacidade."
+      - source: https://devportal.itau.com.br/politicas
+        http_status: 200
+        fetched: '2026-10-18'
+        quote: "Ainda, a transferência internacional de dados pode ocorrer para o desenvolvimento das atividades do Itaú Unibanco, mediante a adoção de medidas de proteção dos Dados Pessoais."
+  data_retention:
+    present: true
+    url: https://devportal.itau.com.br/politicas
+    section: 7. Por quanto tempo mantemos os seus dados?
+    note: >-
+      Retention depends on purpose and lasts as long as legal, regulatory, contractual,
+      risk and product needs require. No fixed retention period or schedule is
+      published.
+    evidence:
+      - source: https://devportal.itau.com.br/politicas
+        http_status: 200
+        fetched: '2026-10-18'
+        quote: "O prazo pelo qual o Itaú Unibanco mantém os Dados Pessoais coletados depende do propósito e da natureza do tratamento dos dados."
+      - source: https://devportal.itau.com.br/politicas
+        http_status: 200
+        fetched: '2026-10-18'
+        quote: "Nós trataremos seus dados pelo período necessário para o cumprimento de obrigações legais, regulatórias e contratuais, para continuar a fornecer e aprimorar nossos produtos e serviços, para o gerenciamento de riscos, para o exercício regular de direito em processos administrativos, judiciais e arbitrais e para as demais finalidades previstas nesta Política de Privacidade."

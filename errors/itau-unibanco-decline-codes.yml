@@ -1,0 +1,5 @@
+generated: '2026-10-18'
+method: none
+source: https://devportal.itau.com.br/nossas-apis/openfinance
+decline_codes: []
+note: 'Open Finance APIs are read-only open data APIs, not payments/authorization APIs. Payments APIs (Pix, payment initiation) require login to access documentation.'

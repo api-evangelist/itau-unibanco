@@ -1,0 +1,12 @@
+generated: '2026-10-18'
+method: searched
+source: https://devportal.itau.com.br/
+name: 'Itaú Unibanco pricing'
+audience: business-product
+pricing_basis: negotiated
+published: false
+delivery:
+  delivery: managed
+plan_count: 0
+plans: []
+note: 'Pricing information requires login and commercial agreement. Documentation states: "O acesso ao catálogo depende da assinatura do contrato. Se a sua empresa ainda não assinou, procure o comercial." Pricing appears to be negotiated enterprise contracts.'

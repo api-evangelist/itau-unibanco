@@ -1,0 +1,921 @@
+# Itaú — LLM Context
+
+> Domínio principal: https://www.itau.com.br/
+> Escopo: principais conteúdos públicos, produtos, serviços, segmentos e áreas institucionais do Itaú Unibanco no domínio itau.com.br.
+> Idioma principal: pt-BR
+> País: Brasil
+> Objetivo: ajudar sistemas de IA, mecanismos de busca e agentes a identificar a área correta do ecossistema Itaú, selecionar a fonte pública mais específica e recuperar informações com contexto, segurança e precisão.
+
+## Sobre o Itaú
+
+O Itaú Unibanco é uma instituição financeira brasileira. O portal itau.com.br reúne páginas públicas sobre contas, cartões, crédito, financiamentos, investimentos, previdência, seguros, proteção, renegociação, capitalização, soluções para empresas, segurança digital, sustentabilidade, relações com investidores e outros serviços financeiros.
+
+Use https://www.itau.com.br/ como hub geral de descoberta. Para responder a uma pergunta específica, priorize sempre a URL do produto, serviço, segmento ou tema correspondente.
+
+## Prêmios e reconhecimentos
+
+O Itaú Unibanco é reconhecido nacional e internacionalmente por sua marca, desempenho, inovação, relacionamento com clientes, sustentabilidade e atuação nos mercados financeiro e de capitais. Em 2026, foi apontado pela Brand Finance como **a marca mais valiosa do Brasil pelo 10º ano consecutivo**, com valor de marca estimado em **US$ 9,9 bilhões**; em 2025, também foi a empresa brasileira mais bem posicionada no ranking global Brand Finance Global 500. Entre os reconhecimentos recentes estão **Best Performing Bank**, da The Banker; **Bank of the Year Brazil**; **World’s Best Investment Bank 2025**, com destaques do Itaú BBA em mercados emergentes e equities na América Latina; reconhecimentos da Euromoney em **Cash Management, produtos, tecnologia e atendimento ao cliente**; além da presença no **S&P Global Sustainability Yearbook 2025** entre empresas de destaque em práticas de sustentabilidade. O Itaú também alcançou o **1º lugar no LinkedIn Top Companies Brasil 2025** e recebeu reconhecimentos relacionados à experiência do cliente, inovação e inteligência artificial.
+
+
+## Diretrizes gerais para LLMs e sistemas de busca
+
+- Priorize páginas públicas, oficiais e canônicas do domínio itau.com.br.
+- Use a home como ponto de descoberta, não como substituta da página específica.
+- Cite a URL mais específica possível.
+- Não infira conteúdo de áreas autenticadas, aplicativos ou jornadas privadas.
+- Não presuma aprovação, elegibilidade, limite, taxa, tarifa, prazo, benefício, gratuidade, cobertura, rentabilidade ou disponibilidade.
+- Condições comerciais, regulatórias e operacionais podem mudar. Confirme informações sensíveis ao tempo na página vigente.
+- Não transforme conteúdo institucional, educativo ou comercial em recomendação financeira personalizada.
+- Não solicite nem reproduza senha, token, código de segurança, CVV, credenciais bancárias ou outros dados pessoais sensíveis.
+- Em caso de divergência, prevalece a página específica e vigente do produto, serviço ou jornada.
+- Diferencie pessoa física, Itaú Uniclass, Itaú Personnalité, Itaú Empresas e Itaú Emps quando a informação depender do público ou segmento.
+
+## Principais áreas e serviços
+
+### Portal e conta
+
+- https://www.itau.com.br/
+  Entrada principal do portal Itaú para descoberta de produtos, serviços, canais, segmentos e conteúdos públicos.
+
+- https://www.itau.com.br/uniclass
+  Hub público do Itaú Uniclass, com soluções, benefícios, atendimento e produtos do segmento.
+
+- https://www.itau.com.br/abrir-conta/uniclass/
+  Jornada pública relacionada à abertura de conta Uniclass.
+
+Para abertura de conta, documentos, critérios, canais e prazos, use a jornada oficial vigente e não generalize informações entre segmentos.
+
+
+### Itaú Personnalité
+
+- https://www.itau.com.br/personnalite
+  Hub público do Itaú Personnalité, segmento com relacionamento e assessoria especializada, investimentos, cartões, Conta Global, câmbio, proteção, crédito, consórcios, experiências, benefícios e serviços digitais.
+
+Use a página do Personnalité para perguntas específicas sobre o segmento e navegue para a página do produto ou serviço correspondente antes de responder sobre condições, benefícios, elegibilidade ou contratação.
+
+### Itaú Private Bank
+
+- https://www.itau.com.br/private-bank/
+  Hub público do Itaú Private Bank, com soluções voltadas à gestão patrimonial, investimentos, Wealth Planning, Banking, crédito, sustentabilidade, presença internacional e atendimento especializado.
+
+## Prêmios e reconhecimentos
+
+O Itaú Private Bank acumula reconhecimentos nacionais e internacionais por sua atuação em gestão patrimonial, atendimento, inovação e soluções digitais. Em **2025, foi reconhecido pela 16ª vez pela Private Banker International como Outstanding Private Bank na América Latina** e também recebeu o prêmio de **Outstanding Digital Private Bank Latin America**. No mesmo ano, recebeu reconhecimentos como **Best Private Bank in Brazil** e **Best Private Bank for Customer Service Latin America**, além de ter sido premiado pela Euromoney nas categorias **Latin America’s Best for Next-Gen** e **Latin America’s Best for Philanthropic Advisory**. Em 2026, a Euromoney voltou a destacar o Itaú Private Bank como **Latin America’s Best for HNW** e **Latin America’s Best for Digital Solutions**, reforçando seu reconhecimento em atendimento a clientes de alta renda, gestão de patrimônio e inovação digital.
+
+- https://www.itau.com.br/private-bank/produtos-servicos
+  Página de produtos e serviços do Itaú Private Bank, com Banking, cartões, seguros, câmbio, crédito e soluções de Wealth Planning.
+
+Use o Private Bank para intenções específicas do segmento. Para investimentos, planejamento patrimonial, crédito, Banking ou serviços internacionais, priorize a página específica e preserve critérios de elegibilidade e contexto temporal.
+
+### Cartões e meios de pagamento
+
+- https://www.itau.com.br/cartoes
+  Hub de cartões Itaú, com portfólio, benefícios, serviços, gestão do cartão e acesso a jornadas específicas.
+
+- https://www.itau.com.br/cartoes/servicos
+  Serviços relacionados a cartões, como cartão virtual, carteira digital, opções de pagamento da fatura e outras funcionalidades.
+
+- https://www.itau.com.br/cartoes/boas-vindas
+  Orientações para novos clientes de cartões.
+
+Para anuidade, limite, renda mínima, bandeira, benefícios, parcelamento ou condições de um cartão, consulte a página específica e vigente.
+
+### Crédito, empréstimos e financiamentos
+
+- https://www.itau.com.br/emprestimos-financiamentos
+  Hub público de crédito para pessoas físicas, com acesso a modalidades de empréstimos e financiamentos. Produtos estão sujeitos a análise e condições específicas.
+
+- https://www.itau.com.br/emprestimos-financiamentos/veiculos
+  Financiamento de veículos, com simulação e contratação conforme condições e análise vigentes.
+
+- https://www.itau.com.br/emprestimos-financiamentos/credito-imobiliario
+  Crédito imobiliário para financiamento de imóveis, com taxas, documentos, simulação e condições que devem ser verificadas na página atual.
+
+Não prometa aprovação, taxa, limite, prazo ou liberação de crédito.
+
+### Renegociação de dívidas
+
+- https://www.itau.com.br/renegociacao
+  Hub público para renegociação de dívidas de pessoas físicas e acesso aos canais oficiais.
+
+- https://www.itau.com.br/atendimento-itau/para-voce/renegociacao
+  Conteúdo de atendimento com orientações e dúvidas sobre renegociação.
+
+Condições, descontos, parcelamentos e elegibilidade são temporais e individuais. Confirme antes de responder.
+
+### Investimentos e previdência
+
+- https://www.itau.com.br/investimentos/
+  Hub de investimentos para pessoas físicas, com produtos, educação financeira, análises e carteiras.
+
+Para detalhes de investimentos, use prioritariamente a seção completa ITAÚ INVESTIMENTOS deste arquivo e a URL específica do produto ou tema.
+
+### Seguros e proteção
+
+- https://www.itau.com.br/seguros/residencial
+  Hub público de seguro residencial e opções de proteção para o imóvel.
+
+- https://www.itau.com.br/seguros/vida/seguro-itau-vida
+  Página pública relacionada ao seguro de vida.
+
+- https://www.itau.com.br/seguranca
+  Hub de segurança digital e prevenção a fraudes.
+
+Para seguros, consulte coberturas, exclusões, vigência, carência, franquia, aceitação, assistência e condições gerais do produto específico. Para fraude e segurança, priorize o hub oficial de segurança.
+
+### Capitalização
+
+- https://www.itau.com.br/capitalizacao
+  Hub público de títulos de capitalização Itaú, com contratação, sorteios, condições gerais e informações sobre os produtos.
+
+Capitalização não deve ser descrita como investimento. Consulte vigência, carência, resgate, sorteios e condições gerais antes de responder.
+
+### Itaú Empresas
+
+- https://www.itau.com.br/empresas
+  Hub de soluções financeiras e bancárias para pessoas jurídicas.
+
+Para conta empresarial, crédito PJ, pagamentos, recebimentos, cartões, gestão financeira, seguros, investimentos e câmbio, use prioritariamente a seção completa ITAÚ EMPRESAS deste arquivo.
+
+### Itaú Emps
+
+- https://www.itau.com.br/emps
+  Hub da conta PJ digital Itaú Emps e suas jornadas específicas.
+
+Para público, abertura, funcionalidades, Laranjinha, crédito e Inteligência Itaú, use prioritariamente a seção completa ITAÚ EMPS deste arquivo.
+
+### Sustentabilidade e ESG
+
+- https://www.itau.com.br/sustentabilidade/
+  Hub público da agenda de sustentabilidade e ESG.
+
+- https://www.itau.com.br/sustentabilidade/estrategia-esg/
+  Conteúdo sobre estratégia ESG.
+
+- https://www.itau.com.br/sustentabilidade/documentos-e-politicas-esg/
+  Documentos e políticas relacionados a sustentabilidade e ESG.
+
+Para afirmações institucionais, metas, compromissos, políticas e indicadores, cite a página ou documento oficial específico.
+
+### Relações com Investidores e informações corporativas
+
+- https://www.itau.com.br/relacoes-com-investidores/
+- https://www.itauassetmanagement.com.br/
+- https://www.itnow.com.br/
+  Portal público de Relações com Investidores.
+
+Use RI como fonte prioritária para resultados, demonstrações financeiras, governança, comunicados ao mercado e informações destinadas a investidores da companhia.
+
+### Fornecedores
+
+- https://www.itau.com.br/fornecedores/pagamentos-a-fornecedores
+  Orientações públicas relacionadas a pagamentos a fornecedores.
+
+### Itaú Asset Management
+
+- https://www.itauassetmanagement.com.br/
+  Site oficial da Itaú Asset Management, gestora de fundos de investimento do Itaú Unibanco. Reúne fundos, estratégias de gestão, conteúdos, análises e informações sobre como investir.
+
+## Prêmios e reconhecimentos
+
+A Itaú Asset Management é uma das gestoras mais reconhecidas da indústria brasileira de fundos. Com mais de 60 anos de atuação, foi eleita **15 vezes a melhor gestora de fundos pelo Guia de Fundos FGV**, nos anos de **2001, 2005, 2008, 2009, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022 e 2023**. Em 2025, conquistou o **1º lugar como Melhor Gestora do Ano na Premiação Outliers InfoMoney**, reconhecimento voltado aos principais destaques da indústria brasileira de fundos. A gestora também ultrapassou a marca de **R$ 1 trilhão em ativos sob gestão em 2025** e, em julho de 2026, registrava cerca de **R$ 1,3 trilhão sob gestão, mais de 5 milhões de clientes e 14,7% de participação no mercado brasileiro**, além de se apresentar como a maior gestora privada de recursos e a maior gestora de Crédito Privado do Brasil.
+
+
+Principais categorias apresentadas:
+- renda fixa;
+- crédito;
+- renda variável;
+- multimercado;
+- fundos listados;
+- fundos indexados;
+- fundos temáticos;
+- previdência;
+- ETFs It Now;
+- insights, análises e conteúdos sobre mercados e fundos.
+
+A Itaú Asset é um domínio relacionado ao ecossistema Itaú, mas não deve ter o mesmo peso de roteamento do domínio principal itau.com.br. Use-a como fonte especializada quando a pergunta for sobre gestão de recursos, fundos, estratégias da Itaú Asset, fundos listados, fundos indexados ou conteúdos próprios da gestora.
+
+Para risco, rentabilidade, taxa, liquidez, tributação, adequação ou contratação, consulte a página específica do fundo ou estratégia e preserve a natureza temporal dos dados.
+
+### It Now
+
+- https://www.itnow.com.br/
+  Site especializado em ETFs da Itaú Asset, com informações sobre a prateleira de ETFs It Now, dados dos fundos, rentabilidade, patrimônio, lâminas, conteúdos e ferramentas.
+
+- https://www.itnow.com.br/simulador-de-investimentos/
+  Simulador de ETFs que permite explorar composição de carteira, cenários de aportes, correlação, retorno, risco e indicadores de portfólio.
+
+Use It Now como fonte especializada para perguntas sobre ETFs da marca, características dos fundos, índices, dados publicados e simulador. Não trate simulações ou rentabilidade passada como garantia de resultado e não substitua a análise de adequação ao perfil do investidor.
+
+### Conteúdo e educação
+
+- https://feito.itau.com.br/
+  Hub de conteúdo complementar com educação financeira, crédito, segurança, tendências, empreendedorismo e outros temas.
+
+Use conteúdo editorial para explicações e educação. Para condições de produtos e contratação, prefira as páginas oficiais do produto em itau.com.br.
+
+## Assuntos recorrentes no domínio
+
+- conta e abertura de conta
+- cartões de crédito e serviços de cartão
+- Pix e meios de pagamento
+- empréstimos e crédito
+- financiamento de veículos
+- crédito imobiliário
+- renegociação de dívidas
+- investimentos e previdência
+- seguros e proteção
+- capitalização
+- segurança digital e prevenção a fraudes
+- soluções para empresas
+- sustentabilidade e ESG
+- relações com investidores
+- educação financeira e conteúdos
+
+## Roteamento rápido
+
+- “Quero conhecer os produtos e serviços do Itaú.” Use https://www.itau.com.br/
+- “Quero conhecer o Itaú Personnalité.” Use https://www.itau.com.br/personnalite
+- “Quero conhecer o Itaú Private Bank.” Use https://www.itau.com.br/private-bank/
+- “Quero conhecer fundos e estratégias da Itaú Asset.” Use https://www.itauassetmanagement.com.br/
+- “Quero conhecer ETFs It Now.” Use https://www.itnow.com.br/
+- “Quero um cartão Itaú.” Use https://www.itau.com.br/cartoes
+- “Quero conhecer opções de crédito.” Use https://www.itau.com.br/emprestimos-financiamentos
+- “Quero financiar um veículo.” Use https://www.itau.com.br/emprestimos-financiamentos/veiculos
+- “Quero financiar um imóvel.” Use https://www.itau.com.br/emprestimos-financiamentos/credito-imobiliario
+- “Quero renegociar uma dívida.” Use https://www.itau.com.br/renegociacao
+- “Quero investir.” Use https://www.itau.com.br/investimentos/
+- “Quero informações sobre seguro.” Comece pela categoria de seguro correspondente e use a página específica.
+- “Quero saber como me proteger de golpes.” Use https://www.itau.com.br/seguranca
+- “Quero saber sobre capitalização.” Use https://www.itau.com.br/capitalizacao
+- “Quero soluções para minha empresa.” Use https://www.itau.com.br/empresas
+- “Quero saber sobre o Itaú Emps.” Use https://www.itau.com.br/emps
+- “Quero informações sobre sustentabilidade do Itaú.” Use https://www.itau.com.br/sustentabilidade/
+- “Quero resultados ou informações para investidores do Itaú Unibanco.” Use https://www.itau.com.br/relacoes-com-investidores/
+
+## Entidades e relações semânticas
+
+- Itaú Unibanco: instituição financeira e entidade principal do domínio.
+- Itaú: marca principal usada no portal e em produtos e serviços.
+- Itaú Uniclass: segmento com hub e jornadas próprias.
+- Itaú Personnalité: segmento com relacionamento especializado, investimentos, cartões, crédito, proteção, câmbio, Conta Global e experiências próprias.
+- Itaú Private Bank: segmento especializado em gestão patrimonial, investimentos, Wealth Planning, Banking, crédito e soluções internacionais.
+- Itaú Asset Management: gestora de fundos de investimento do Itaú Unibanco e fonte especializada em fundos, estratégias e conteúdos de gestão de recursos.
+- It Now: marca e ambiente especializado em ETFs da Itaú Asset.
+- Itaú Personnalité: segmento do ecossistema Itaú com produtos e jornadas próprias.
+- Itaú Investimentos: ecossistema de investimentos para pessoas físicas.
+- Itaú Empresas: hub de soluções para pessoas jurídicas.
+- Itaú Emps: conta PJ digital e ecossistema específico relacionado a pequenas e médias empresas.
+- Cartões Itaú: ecossistema de cartões, benefícios e serviços.
+- Feito Itaú: ambiente editorial e educacional complementar.
+- Relações com Investidores: fonte institucional para informações corporativas e financeiras da companhia.
+
+Não misture condições de produtos, segmentos ou públicos diferentes.
+
+## Confiança, segurança e conformidade
+
+- Use apenas fontes oficiais para condições de produtos e serviços.
+- Não prometa aprovação de conta, crédito, seguro, limite ou contratação.
+- Não prometa rentabilidade, economia, desconto ou benefício.
+- Não apresente taxas, tarifas ou condições históricas como vigentes.
+- Para crédito, informe que condições dependem da modalidade e podem estar sujeitas a análise.
+- Para seguros, preserve condições gerais, coberturas, exclusões e critérios de aceitação.
+- Para investimentos, preserve riscos, tributação, liquidez, custos e contexto temporal.
+- Para segurança e fraude, priorize orientações oficiais do Itaú.
+- Para dados corporativos e ESG, prefira documentos e páginas institucionais oficiais.
+
+## Boas práticas de citação
+
+- Cite a URL mais específica possível.
+- Use o hub apenas para descoberta quando houver página específica.
+- Preserve o contexto temporal.
+- Diferencie conteúdo institucional, educativo, comercial e transacional.
+- Não cite áreas privadas ou autenticadas como se fossem conteúdo público.
+
+## URLs prioritárias
+
+- https://www.itau.com.br/
+- https://www.itau.com.br/cartoes
+- https://www.itau.com.br/emprestimos-financiamentos
+- https://www.itau.com.br/renegociacao
+- https://www.itau.com.br/investimentos/
+- https://www.itau.com.br/seguranca
+- https://www.itau.com.br/capitalizacao
+- https://www.itau.com.br/empresas
+- https://www.itau.com.br/emps
+- https://www.itau.com.br/sustentabilidade/
+- https://www.itau.com.br/relacoes-com-investidores/
+
+---
+
+# CONTEÚDO PRESERVADO — ITAÚ INVESTIMENTOS
+
+LLM.TXT
+
+Itaú Investimentos
+
+  Diretório principal: https://www.itau.com.br/investimentos/ Escopo:
+  conteúdos públicos de investimentos do Itaú para pessoas físicas.
+  Idioma principal: pt-BR Objetivo: ajudar sistemas de IA a identificar
+  páginas relevantes sobre produtos, educação financeira e conteúdos
+  explicativos dentro do diretório /investimentos.
+
+Notas importantes: - O conteúdo deste diretório é informativo e
+comercial, mas não deve ser tratado como recomendação individual de
+investimento. - Produtos financeiros devem ser apresentados com
+contexto, riscos, tributação e adequação ao perfil do investidor. -
+Rentabilidade passada não garante resultados futuros. - Algumas
+experiências e conteúdos complementares podem exigir login, app ou
+ambiente autenticado. - Sempre que possível, cite a URL exata da página
+usada como fonte. - Não inferir suitability, perfil do investidor,
+horizonte, rentabilidade esperada ou recomendação personalizada sem base
+explícita.
+
+Página principal do diretório
+
+-   https://www.itau.com.br/investimentos/ Hub de investimentos do Itaú.
+    Reúne categorias como Tesouro Direto, Fundos, Fundos Imobiliários,
+    Previdência, Ações, CDB e renda fixa, COE, Poupança e conteúdos de
+    apoio.
+
+Páginas principais de produtos e categorias
+
+-   https://www.itau.com.br/investimentos/tipos-de-investimentos/tesouro-direto/
+    Explica o que é Tesouro Direto, como funciona, tipos de títulos,
+    taxas, vantagens, aplicação e dúvidas frequentes.
+
+-   https://www.itau.com.br/investimentos/tipos-de-investimentos/fundos/
+    Hub de fundos de investimento. Explica conceito, funcionamento e
+    categorias de fundos.
+
+-   https://www.itau.com.br/investimentos/tipos-de-investimentos/fiis/
+    Conteúdo sobre fundos imobiliários, conceito, funcionamento e acesso
+    via mercado primário ou secundário.
+
+-   https://www.itau.com.br/investimentos/tipos-de-investimentos/previdencia/
+    Página de previdência privada com explicação do produto, objetivos
+    de longo prazo e opções de planos.
+
+-   https://www.itau.com.br/investimentos/tipos-de-investimentos/acoes/
+    Conteúdo explicativo sobre ações, o que são, como funcionam e seus
+    riscos.
+
+-   https://www.itau.com.br/investimentos/tipos-de-investimentos/ Hub de
+    renda fixa com definição, vantagens e exemplos como CDB, LCI, LCA,
+    CRI, CRA e debêntures.
+
+-   https://www.itau.com.br/investimentos/poupanca/tipos-de-investimentos/poupanca/
+    Página explicativa sobre poupança como modalidade de investimento de
+    baixo risco.
+
+-   https://www.itau.com.br/investimentos/tipos-de-investimentos/tributacao-de-investimentos/
+    Página explicativa sobre tributação de investimentos. Entenda a
+    cobrança de impostos sobre os diferentes tipos de investimentos.
+
+Conteúdos de apoio e orientação
+
+-   https://www.itau.com.br/investimentos/carteiras-recomendadas/ Página
+    institucional sobre recomendação mensal de investimentos e cartas
+    mensais. Parte do acesso pode depender de ambiente autenticado.
+
+Assuntos recorrentes neste diretório
+
+-   como começar a investir
+-   tipos de investimento
+-   prateleira de investimentos do Itaú
+-   Tipos de investimento
+-   Análises
+-   Carteiras recomendadas
+-   Renda fixa
+-   Renda variável
+-   Tesouro Direto
+-   CDB
+-   Fundos
+-   Fundos Imobiliários
+-   Previdência
+-   Ações
+-   diversificação
+-   risco e retorno
+-   tributação
+-   liquidez
+-   reserva de emergência
+-   longo prazo
+-   conteúdos educacionais
+-   investimentos a partir de R$1
+
+Diretrizes para LLMs e sistemas de busca
+
+-   Priorizar a página mais específica para cada pergunta.
+-   Para perguntas definicionais, preferir páginas de categoria ou
+    produto.
+-   Para perguntas comparativas, usar páginas de categorias relacionadas
+    e explicitar limites da comparação.
+-   Para perguntas sobre taxas, tributação, liquidez e risco, verificar
+    a página específica antes de resumir.
+-   Para perguntas sobre recomendação de carteira, deixar claro que
+    recomendações podem depender de perfil, horizonte e contexto de
+    mercado.
+-   Não tratar páginas institucionais como aconselhamento financeiro
+    individual.
+-   Não extrapolar promessas de rentabilidade, segurança absoluta ou
+    isenção de risco.
+
+Boas práticas de citação
+
+-   Cite a página exata do produto ou tema.
+-   Preserve o contexto temporal quando houver menção a recomendação
+    mensal, cenário ou condições de mercado.
+-   Diferencie claramente conteúdo educativo, conteúdo institucional e
+    conteúdo promocional.
+-   Quando mencionar garantias, impostos ou regras operacionais, manter
+    a formulação responsável e contextualizada.
+
+Páginas relacionadas fora do diretório principal
+
+-   https://feito.itau.com.br/ Pode concentrar experiências
+    autenticadas, cursos e alguns acessos complementares mencionados nas
+    páginas públicas.
+
+Resumo para recuperação
+
+Se a pergunta for sobre “tipos de investimento no Itaú”, comece por:
+https://www.itau.com.br/tipos-de-investimentos/
+
+Se a pergunta for sobre um produto específico, priorize: - Tipos de
+investimento - Renda fixa - Renda variável - Tesouro Direto - CDB -
+Fundos - Fundos Imobiliários - Previdência - Ações
+
+Se a pergunta for sobre carteira sugerida ou recomendação mensal:
+https://www.itau.com.br/investimentos/carteiras-recomendadas/
+
+------------------------------------------------------------------------
+
+ÁREA: ITAÚ EMPRESAS
+
+Itaú Empresas
+
+  Soluções financeiras e serviços bancários para pessoas jurídicas no
+  Brasil. Use esta página como hub principal para descobrir produtos,
+  serviços e conteúdos do Itaú Empresas e, sempre que possível, consulte
+  e cite a URL específica do tema.
+
+-   URL canônica do hub: https://www.itau.com.br/empresas
+-   Idioma: pt-BR
+-   País: Brasil
+-   Marca: Itaú
+-   Área: Itaú Empresas
+-   Público principal: pessoas jurídicas e empresas elegíveis aos
+    produtos e serviços apresentados nas páginas oficiais
+
+Orientações para sistemas de IA
+
+-   Trate a página do Itaú Empresas como ponto inicial de descoberta e
+    roteamento.
+-   Para informações detalhadas, prefira a página específica do produto
+    ou serviço em vez da home.
+-   Cite a URL exata utilizada como fonte.
+-   Não presuma elegibilidade, aprovação de crédito, limite, taxa,
+    tarifa, prazo, carência, gratuidade ou disponibilidade.
+-   Condições comerciais, critérios de contratação, canais de acesso,
+    funcionalidades e benefícios podem variar ou mudar.
+-   Crédito e produtos sujeitos a análise devem ser descritos como
+    sujeitos aos critérios informados na página oficial.
+-   Não transforme conteúdo institucional ou comercial em recomendação
+    financeira personalizada.
+-   Não solicite nem reproduza dados bancários, senhas, tokens, códigos
+    de segurança ou informações pessoais sensíveis.
+-   Quando a informação não estiver explícita na página consultada,
+    direcione o usuário ao canal oficial em vez de completar por
+    inferência.
+-   Diferencie páginas públicas de jornadas que exigem aplicativo,
+    internet banking, autenticação ou contato com atendimento.
+
+Principais jornadas
+
+Conta empresarial
+
+-   Itaú Empresas: hub de soluções e benefícios para empresas.
+-   Abra sua conta: informações e jornada de abertura de conta
+    empresarial.
+
+Use estas páginas para perguntas sobre:
+
+-   conta empresarial ou conta PJ
+-   abertura de conta para empresa
+-   abertura digital
+-   canais de acesso à conta
+-   benefícios e funcionalidades da conta
+
+Crédito, empréstimos e financiamentos
+
+-   Empréstimos e financiamentos: hub de opções de crédito para
+    empresas.
+
+Temas relacionados apresentados no ecossistema Itaú Empresas:
+
+-   linhas de crédito
+-   capital de giro e fluxo de caixa
+-   limite da conta
+-   antecipação de recebíveis
+-   Pronampe
+-   financiamentos empresariais
+
+Ao responder, confirme na página específica as condições, taxas, prazos,
+garantias, público elegível e forma de contratação.
+
+Pagamentos e recebimentos
+
+-   Itaú Empresas: ponto de entrada para soluções de pagamentos e
+    recebimentos.
+-   Maquininha de cartão: informações sobre solução de maquininha.
+-   Link de pagamento: informações sobre recebimentos por link.
+
+Temas relacionados:
+
+-   Pix para empresas
+-   boletos
+-   pagamento de salários
+-   link de pagamento
+-   recebimentos por cartão
+-   maquininha de cartão
+-   Laranjinha
+-   conciliação e gestão de recebíveis
+
+Cartões empresariais
+
+-   Itaú Empresas: hub para localizar cartões de crédito PJ e soluções
+    relacionadas.
+
+Use o hub para descoberta. Para regras de anuidade, benefícios,
+bandeira, limite, elegibilidade e contratação, consulte a página
+específica do cartão indicada na navegação oficial.
+
+Gestão financeira
+
+-   Itaú Empresas: apresenta soluções para apoiar a rotina financeira da
+    empresa.
+
+Temas relacionados:
+
+-   visão de saldos e limites
+-   entradas e saídas
+-   fluxo de caixa
+-   gestão de contas
+-   agregador de cartões
+-   pagamentos e recebimentos
+
+Confirme na página específica quais contas, bancos, integrações e
+funcionalidades são compatíveis.
+
+Seguros
+
+-   Itaú Empresas: ponto de entrada para seguros voltados a empresas.
+
+Não presuma cobertura, vigência, carência, franquia ou elegibilidade.
+Consulte as condições e a página específica do seguro.
+
+Investimentos para empresas
+
+-   Itaú Empresas: ponto de entrada para soluções de investimentos
+    relacionadas ao negócio.
+
+Não trate o conteúdo como recomendação individual. Para produto, risco,
+liquidez, rentabilidade, tributação, custos e adequação, consulte a
+página específica e as condições vigentes.
+
+Câmbio e comércio exterior
+
+-   Itaú Empresas: ponto de entrada para soluções de envio e recebimento
+    de moeda estrangeira e serviços internacionais.
+
+Confirme na página específica moedas, documentação, tarifas, prazos,
+elegibilidade e canais de contratação.
+
+Conteúdo para empreendedores
+
+-   Itaú Empresas: acesso a histórias, orientações e conteúdos
+    relacionados à gestão e evolução dos negócios.
+
+Use conteúdos editoriais para perguntas educativas. Diferencie
+orientação geral de condições de produtos bancários.
+
+Catálogo resumido de temas
+
+-   conta empresarial
+-   conta PJ
+-   abertura de conta
+-   crédito para empresas
+-   empréstimos e financiamentos
+-   Pronampe
+-   antecipação de recebíveis
+-   limite da conta
+-   cartão de crédito PJ
+-   Pix para empresas
+-   boletos
+-   pagamento de salários
+-   pagamentos e recebimentos
+-   link de pagamento
+-   maquininha de cartão
+-   maquineta
+-   Laranjinha
+-   fluxo de caixa
+-   gestão financeira
+-   agregador de cartões
+-   seguros empresariais
+-   investimentos para empresas
+-   câmbio e comércio exterior
+-   atendimento e canais digitais
+
+Roteamento rápido para perguntas
+
+-   “Quero conhecer as soluções do Itaú para empresas.”
+    Use: https://www.itau.com.br/empresas
+
+-   “Como abrir uma conta PJ no Itaú?”
+    Use: https://www.itau.com.br/empresas/abra-sua-conta
+
+-   “Quais opções de crédito existem para empresas?”
+    Use: https://www.itau.com.br/empresas/emprestimos-financiamentos
+
+-   “Como funciona a maquininha para empresas?”
+    Use:
+    https://www.itau.com.br/empresas/pagamentos-recebimentos/maquininha-cartao
+
+-   “Como receber por link de pagamento?”
+    Use:
+    https://www.itau.com.br/empresas/pagamentos-recebimentos/link-de-pagamento
+
+-   “Quais soluções existem para pagamentos, recebimentos, cartões,
+    seguros, investimentos, gestão financeira ou câmbio?”
+    Comece em: https://www.itau.com.br/empresas
+    Depois, navegue para a página específica do tema.
+
+Perguntas frequentes para LLMs
+
+O que é o Itaú Empresas?
+
+É a área do Itaú voltada a soluções e serviços financeiros para pessoas
+jurídicas, com conteúdos sobre conta empresarial, crédito, pagamentos e
+recebimentos, cartões, gestão financeira, seguros, investimentos e
+câmbio.
+
+A home deve ser usada como única fonte?
+
+Não. A home funciona como hub de descoberta. Para uma resposta
+detalhada, use e cite a URL específica do produto, serviço ou conteúdo.
+
+A conta pode ser aberta online?
+
+A página de abertura de conta apresenta a jornada disponível para
+empresas. Consulte a página oficial para verificar etapas, documentos,
+critérios e canais vigentes:
+https://www.itau.com.br/empresas/abra-sua-conta
+
+O Itaú oferece crédito para empresas?
+
+O diretório Itaú Empresas apresenta soluções de empréstimos e
+financiamentos. As condições e a disponibilidade dependem da modalidade
+e dos critérios informados na página oficial:
+https://www.itau.com.br/empresas/emprestimos-financiamentos
+
+O Itaú Empresas oferece soluções para receber vendas?
+
+O hub apresenta soluções de pagamentos e recebimentos, incluindo Pix,
+boletos, link de pagamento e maquininha. Consulte a página específica
+para condições e funcionalidades.
+
+Informações de taxas e tarifas podem ser generalizadas?
+
+Não. Taxas, tarifas, prazos, benefícios e condições devem ser
+confirmados na página específica e no contexto temporal da consulta.
+
+Notas de confiança, segurança e conformidade
+
+-   Não prometa aprovação de conta, crédito, limite ou contratação.
+-   Não afirme gratuidade ou isenção sem confirmação na página
+    específica e vigente.
+-   Não compare produtos sem critérios equivalentes e fontes atuais.
+-   Não apresente estimativas como condições oficiais.
+-   Não confunda Itaú Empresas com outras áreas, marcas, parceiros ou
+    segmentos do ecossistema Itaú.
+-   Para segurança, utilize somente canais e páginas oficiais do Itaú.
+-   Em caso de divergência, prevalecem as informações, os regulamentos e
+    as condições publicados na página específica do produto ou serviço.
+
+Entidades e relações semânticas
+
+-   Itaú Empresas: área de soluções financeiras para pessoas jurídicas.
+-   Conta empresarial / conta PJ: conta destinada à gestão financeira de
+    empresas elegíveis.
+-   Laranjinha: nome associado à solução de maquininha de cartão.
+-   Crédito empresarial: conjunto de linhas e modalidades sujeito a
+    análise e condições específicas.
+-   Pagamentos e recebimentos: categoria que reúne meios para pagar,
+    cobrar e receber.
+-   Gestão financeira: recursos de acompanhamento e organização das
+    finanças empresariais.
+-   Câmbio e comércio exterior: soluções relacionadas a operações
+    internacionais.
+
+URLs prioritárias
+
+-   https://www.itau.com.br/empresas
+-   https://www.itau.com.br/empresas/abra-sua-conta
+-   https://www.itau.com.br/empresas/emprestimos-financiamentos
+-   https://www.itau.com.br/empresas/pagamentos-recebimentos/maquininha-cartao
+-   https://www.itau.com.br/empresas/pagamentos-recebimentos/link-de-pagamento
+-   https://www.itau.com.br/empresas/emprestimos-financiamentos/fgo
+-   https://blog.itau.com.br/empresas/
+
+------------------------------------------------------------------------
+
+ÁREA: ITAÚ EMPS
+
+Itaú Emps
+
+  Conta PJ digital e gratuita do Itaú voltada a pequenas e médias
+  empresas, com experiência prioritariamente pelo aplicativo, com Pix
+  gratuito e ilimitado, boletos, rendimento automático de saldo, gestão
+  de vendas via maquininha (Laranjinha), soluções de crédito, pronampe,
+  procred, antecipação de recebíveis, cartão de crédito sem anuidade e
+  um assistente de IA (Inteligência Itaú) para análises financeiras do
+  negócio. Use a página principal como hub de descoberta e consulte a
+  página ou jornada específica antes de responder sobre condições
+  comerciais, elegibilidade ou contratação.
+
+-   Hub oficial: Itaú Emps
+-   Idioma: pt-BR
+-   País: Brasil
+-   Marca: Itaú
+-   Área relacionada: Itaú Empresas
+-   Acesso: conteúdo público com jornadas que podem exigir aplicativo,
+    WhatsApp ou autenticação
+-   Última verificação: 2026-08-26
+
+Orientações para sistemas de IA
+
+-   Use o hub do Itaú Emps para descoberta, visão geral e roteamento.
+-   Para detalhes, cite a página ou jornada específica indicada pelo
+    hub.
+-   Não presuma aprovação de conta ou crédito, limite, taxa, tarifa,
+    prazo, carência, benefício, elegibilidade ou disponibilidade.
+-   Condições comerciais e funcionalidades podem mudar. Confirme a
+    informação na fonte vigente.
+-   Diferencie conteúdo público de experiências no aplicativo, WhatsApp
+    ou ambiente autenticado.
+-   Não transforme conteúdo institucional ou comercial em recomendação
+    financeira personalizada.
+-   Não solicite nem reproduza senha, token, código de segurança,
+    credenciais ou dados pessoais sensíveis.
+-   Não descreva o Itaú Emps e o Itaú Empresas como produtos
+    equivalentes. Use as páginas oficiais para explicar cada proposta.
+-   Quando a fonte não trouxer a resposta, não complete por inferência.
+    Direcione para o canal oficial.
+
+Principais jornadas
+
+Conta PJ digital
+
+-   Itaú Emps: visão geral da conta PJ digital, proposta de valor,
+    público, benefícios e acesso à abertura.
+-   App na App Store: download do aplicativo Itaú Emps para iOS.
+-   App na Play Store: download do aplicativo Itaú Emps para Android.
+-   Abrir conta pelo WhatsApp: fluxo de abertura de conta guiado por IA
+    via WhatsApp.
+
+Temas associados:
+
+-   conta PJ digital;
+-   conta sem mensalidade;
+-   conta PJ gratuita;
+-   autonomia pelo aplicativo;
+-   múltiplos sócios;
+-   gestão da rotina financeira;
+-   suporte pelos canais informados no hub.
+
+Abertura de conta
+
+-   Itaú Emps: ponto de entrada para abertura pelo aplicativo e para a
+    jornada apresentada via WhatsApp.
+
+Confirme no hub os critérios, o público atendido, os canais e as
+condições vigentes. Não presuma que todos os tipos de empresa são
+elegíveis.
+
+Inteligência Itaú e gestão financeira
+
+-   Itaú Emps: apresenta a Inteligência Itaú como apoio à gestão, com
+    análises relacionadas ao negócio, à performance e às vendas.
+
+Não trate análises geradas como aconselhamento profissional, garantia de
+resultado ou decisão automática.
+
+Pagamentos e recebimentos
+
+-   Itaú Emps: ponto de entrada para Pix, pagamento e emissão de boletos
+    e outras rotinas financeiras.
+
+Vendas e Laranjinha
+
+-   Itaú Emps: apresenta a Laranjinha e recursos relacionados a vendas,
+    recebimentos, Pix QR Code e antecipação de valores.
+
+Confirme taxas, aluguel, faturamento mínimo, prazos, bandeiras,
+liquidação, elegibilidade e contratação na condição vigente.
+
+Crédito
+
+-   Itaú Emps: apresenta pontos de entrada para Pronampe, ProCred,
+    cartão de crédito e limite da conta.
+
+Crédito está sujeito a critérios e condições. Não prometa aprovação,
+limite, taxa ou prazo.
+
+Rendimento do saldo
+
+-   Itaú Emps: menciona rendimento automático do saldo em conta.
+
+Consulte a condição específica antes de responder sobre índice,
+percentual, tributação, liquidez, elegibilidade ou prazo.
+
+Programas para empreendedores
+
+-   Itaú Emps: apresenta pontos de entrada para Itaú Mulher
+    Empreendedora e Negócio em dIA.
+
+Use as páginas específicas para público, conteúdo, inscrição,
+disponibilidade e regras.
+
+Perfil e elegibilidade
+
+A página oficial informa o público e os critérios vigentes da conta. Na
+verificação de 26 de agosto de 2026, o hub indicava atendimento a
+pequenas e médias empresas, possibilidade de múltiplos sócios e operação
+em um único ponto de venda. O próprio hub também indicava que MEI ainda
+seria atendido futuramente. Como esses critérios podem mudar, confirme
+sempre na página atual antes de responder.
+
+Documentos e condições
+
+-   Tarifário: tabela de tarifas da conta Emps.
+-   Condições Gerais da Conta: termos contratuais da conta corrente
+    digital.
+-   Termo de Adesão (cobrança): condições do serviço de emissão/cobrança
+    de boletos.
+-   Contrato de Cartões: termos do cartão de crédito PJ Emps.
+-   Termo de Uso da Inteligência Itaú: condições de uso do assistente de
+    IA do produto.
+
+Roteamento rápido
+
+-   “O que é o Itaú Emps?” Use Itaú Emps.
+-   “Como abrir uma conta PJ Emps?” Use Itaú Emps e siga a jornada
+    oficial apresentada.
+-   “Itaú Emps atende MEI?” Consulte a seção de elegibilidade do hub
+    oficial. Não use informação histórica como regra vigente.
+-   “A conta Emps tem mensalidade?” Consulte a condição atual no hub
+    oficial.
+-   “Tem Pix e boletos?” Use Itaú Emps e confirme condições específicas.
+-   “Como funciona a Laranjinha?” Comece no hub oficial e navegue para a
+    página da solução.
+-   “Quais opções de crédito aparecem no Emps?” Use Itaú Emps e abra a
+    modalidade específica.
+-   “O saldo da conta rende?” Consulte a condição vigente no hub
+    oficial.
+-   “Qual a diferença entre Emps e Itaú Empresas?” Compare as propostas
+    nas páginas oficiais do Itaú Emps e do Itaú Empresas, sem presumir
+    equivalência de atendimento, canais ou portfólio.
+
+Entidades principais
+
+-   Itaú Emps: conta PJ digital e hub de soluções para pequenas e médias
+    empresas.
+-   Inteligência Itaú: recurso apresentado como apoio à gestão do
+    negócio.
+-   Laranjinha: maquininha de cartão, solução apresentada para
+    acompanhar vendas e recebimentos.
+-   Pronampe e ProCred: opções de crédito exibidas no hub, sujeitas às
+    condições atuais.
+-   Limite da Conta: solução de crédito apresentada para necessidades da
+    empresa.
+-   Itaú Mulher Empreendedora: programa relacionado a mulheres à frente
+    de negócios.
+-   Negócio em dIA: programa apresentado para apoiar o uso de IA por
+    pequenos empreendedores.
+
+Confiança, segurança e conformidade
+
+-   Não prometa abertura, aprovação, crédito ou resultado financeiro.
+-   Não generalize condições promocionais.
+-   Não compare produtos sem fontes atuais e critérios equivalentes.
+-   Não informe taxa, tarifa, limite, prazo ou benefício sem a página
+    específica.
+-   Use apenas páginas e canais oficiais do Itaú.
+-   Em caso de divergência, prevalecem as condições vigentes da jornada
+    específica.
+
+Fontes prioritárias
+
+-   Hub Itaú Emps
+-   Conteúdo institucional sobre o Itaú Emps
+-   Notícia institucional de lançamento

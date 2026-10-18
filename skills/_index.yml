@@ -1,0 +1,42 @@
+name: Itaú Unibanco agent skills
+generated: '2026-10-18'
+method: generated
+source: openapi/
+skills:
+- name: itau-unibanco-compare-credit-products
+  file: skills/itau-unibanco-compare-credit-products.md
+  description: Compare Itaú personal and business credit products (loans, financings,
+    credit cards, overdraft, invoice financing) using Open Finance Brasil open data.
+  operations:
+  - getPersonalLoans
+  - getBusinessLoans
+  - getPersonalFinancings
+  - getBusinessFinancings
+  - getPersonalCreditCards
+  - getBusinessCreditCards
+  - getPersonalUnarrangedAccountOverdraft
+  - getBusinessUnarrangedAccountOverdraft
+  - getBusinessInvoiceFinancings
+- name: itau-unibanco-find-service-channels
+  file: skills/itau-unibanco-find-service-channels.md
+  description: Find Itaú branches, banking agents, electronic and phone service channels
+    via Open Finance Brasil open data.
+  operations:
+  - getBranches
+  - getBankingAgents
+  - getElectronicChannels
+  - getPhoneChannels
+- name: itau-unibanco-compare-account-products
+  file: skills/itau-unibanco-compare-account-products.md
+  description: Retrieve Itaú personal and business account product data (fees, service
+    bundles) via Open Finance Brasil open data.
+  operations:
+  - getPersonalAccounts
+  - getBusinessAccounts
+- name: itau-unibanco-check-api-status
+  file: skills/itau-unibanco-check-api-status.md
+  description: Check implementation status and scheduled outages of Itaú Open Finance
+    Brasil APIs before calling them.
+  operations:
+  - getStatus
+  - getOutage

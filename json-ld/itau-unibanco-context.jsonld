@@ -1,0 +1,541 @@
+{
+  "@context": {
+    "@vocab": "https://itau.com.br/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "itau": "https://itau.com.br/schema#",
+    "ResponseBankingAgentsList": "itau:ResponseBankingAgentsList",
+    "data": {
+      "@id": "itau:data",
+      "@container": "@list"
+    },
+    "links": {
+      "@id": "itau:links",
+      "@type": "@id"
+    },
+    "meta": {
+      "@id": "itau:meta",
+      "@type": "@id"
+    },
+    "BankingAgentsData": "itau:BankingAgentsData",
+    "participant": {
+      "@id": "itau:participant",
+      "@type": "@id"
+    },
+    "bankingAgents": {
+      "@id": "itau:bankingAgents",
+      "@container": "@list"
+    },
+    "BankingAgentsParticipant": "itau:BankingAgentsParticipant",
+    "brand": {
+      "@id": "itau:brand",
+      "@type": "xsd:string"
+    },
+    "name": {
+      "@id": "itau:name",
+      "@type": "xsd:string"
+    },
+    "cnpjNumber": {
+      "@id": "itau:cnpjNumber",
+      "@type": "xsd:string"
+    },
+    "BankingAgentsContractor": "itau:BankingAgentsContractor",
+    "ResponseBranchesList": "itau:ResponseBranchesList",
+    "BranchesData": "itau:BranchesData",
+    "identification": {
+      "@id": "itau:identification",
+      "@type": "@id"
+    },
+    "postalAddress": {
+      "@id": "itau:postalAddress",
+      "@type": "@id"
+    },
+    "availability": {
+      "@id": "itau:availability",
+      "@type": "@id"
+    },
+    "phones": {
+      "@id": "itau:phones",
+      "@container": "@list"
+    },
+    "services": {
+      "@id": "itau:services",
+      "@container": "@list"
+    },
+    "BranchesParticipant": "itau:BranchesParticipant",
+    "urlComplementaryList": {
+      "@id": "itau:urlComplementaryList",
+      "@type": "xsd:string"
+    },
+    "ResponseElectronicChannelsList": "itau:ResponseElectronicChannelsList",
+    "ElectronicChannelsData": "itau:ElectronicChannelsData",
+    "ElectronicChannelsParticipant": "itau:ElectronicChannelsParticipant",
+    "BankingAgent": "itau:BankingAgent",
+    "locations": {
+      "@id": "itau:locations",
+      "@container": "@list"
+    },
+    "contractors": {
+      "@id": "itau:contractors",
+      "@container": "@list"
+    },
+    "BankingAgentIdentification": "itau:BankingAgentIdentification",
+    "corporationName": {
+      "@id": "itau:corporationName",
+      "@type": "xsd:string"
+    },
+    "groupName": {
+      "@id": "itau:groupName",
+      "@type": "xsd:string"
+    },
+    "isUnderestablishment": {
+      "@id": "itau:isUnderestablishment",
+      "@type": "xsd:boolean"
+    },
+    "BankingAgentLocation": "itau:BankingAgentLocation",
+    "BankingAgentPostalAddress": "itau:BankingAgentPostalAddress",
+    "address": {
+      "@id": "itau:address",
+      "@type": "xsd:string"
+    },
+    "additionalInfo": {
+      "@id": "itau:additionalInfo",
+      "@type": "xsd:string"
+    },
+    "districtName": {
+      "@id": "itau:districtName",
+      "@type": "xsd:string"
+    },
+    "townName": {
+      "@id": "itau:townName",
+      "@type": "xsd:string"
+    },
+    "ibgeCode": {
+      "@id": "itau:ibgeCode",
+      "@type": "xsd:string"
+    },
+    "countrySubDivision": {
+      "@id": "itau:countrySubDivision",
+      "@type": "xsd:string"
+    },
+    "postCode": {
+      "@id": "itau:postCode",
+      "@type": "xsd:string"
+    },
+    "country": {
+      "@id": "itau:country",
+      "@type": "xsd:string"
+    },
+    "countryCode": {
+      "@id": "itau:countryCode",
+      "@type": "xsd:string"
+    },
+    "geographicCoordinates": {
+      "@id": "itau:geographicCoordinates",
+      "@type": "@id"
+    },
+    "BankingAgentAvailability": "itau:BankingAgentAvailability",
+    "standards": {
+      "@id": "itau:standards",
+      "@container": "@list"
+    },
+    "exception": {
+      "@id": "itau:exception",
+      "@type": "xsd:string"
+    },
+    "isPublicAccessAllowed": {
+      "@id": "itau:isPublicAccessAllowed",
+      "@type": "xsd:boolean"
+    },
+    "BankingAgentService": "itau:BankingAgentService",
+    "code": {
+      "@id": "itau:code",
+      "@type": "xsd:string"
+    },
+    "BranchPostalAddress": "itau:BranchPostalAddress",
+    "BranchPhone": "itau:BranchPhone",
+    "type": {
+      "@id": "itau:type",
+      "@type": "xsd:string"
+    },
+    "countryCallingCode": {
+      "@id": "itau:countryCallingCode",
+      "@type": "xsd:string"
+    },
+    "areaCode": {
+      "@id": "itau:areaCode",
+      "@type": "xsd:string"
+    },
+    "number": {
+      "@id": "itau:number",
+      "@type": "xsd:string"
+    },
+    "BranchIdentification": "itau:BranchIdentification",
+    "checkDigit": {
+      "@id": "itau:checkDigit",
+      "@type": "xsd:string"
+    },
+    "relatedBranch": {
+      "@id": "itau:relatedBranch",
+      "@type": "xsd:string"
+    },
+    "openingDate": {
+      "@id": "itau:openingDate",
+      "@type": "xsd:string"
+    },
+    "BranchAvailability": "itau:BranchAvailability",
+    "BranchService": "itau:BranchService",
+    "ElectronicChannelIdentification": "itau:ElectronicChannelIdentification",
+    "urls": {
+      "@id": "itau:urls",
+      "@container": "@list"
+    },
+    "ElectronicChannelService": "itau:ElectronicChannelService",
+    "Phone": "itau:Phone",
+    "ResponseSharedAutomatedTellerMachinesList": "itau:ResponseSharedAutomatedTellerMachinesList",
+    "SharedAutomatedTellerMachinesData": "itau:SharedAutomatedTellerMachinesData",
+    "SharedAutomatedTellerMachinesParticipant": "itau:SharedAutomatedTellerMachinesParticipant",
+    "SharedAutomatedTellerMachinesServices": "itau:SharedAutomatedTellerMachinesServices",
+    "SharedAutomatedTellerMachinesIdentification": "itau:SharedAutomatedTellerMachinesIdentification",
+    "ownerName": {
+      "@id": "itau:ownerName",
+      "@type": "xsd:string"
+    },
+    "ResponsePhoneChannelsList": "itau:ResponsePhoneChannelsList",
+    "PhoneChannelsData": "itau:PhoneChannelsData",
+    "PhoneChannelsParticipant": "itau:PhoneChannelsParticipant",
+    "PhoneChannelIdentification": "itau:PhoneChannelIdentification",
+    "PhoneChannelPhone": "itau:PhoneChannelPhone",
+    "PhoneChannelService": "itau:PhoneChannelService",
+    "GeographicCoordinates": "itau:GeographicCoordinates",
+    "latitude": {
+      "@id": "itau:latitude",
+      "@type": "xsd:string"
+    },
+    "longitude": {
+      "@id": "itau:longitude",
+      "@type": "xsd:string"
+    },
+    "Links": "itau:Links",
+    "self": {
+      "@id": "itau:self",
+      "@type": "@id"
+    },
+    "first": {
+      "@id": "itau:first",
+      "@type": "@id"
+    },
+    "prev": {
+      "@id": "itau:prev",
+      "@type": "@id"
+    },
+    "next": {
+      "@id": "itau:next",
+      "@type": "@id"
+    },
+    "last": {
+      "@id": "itau:last",
+      "@type": "@id"
+    },
+    "Meta": "itau:Meta",
+    "totalRecords": {
+      "@id": "itau:totalRecords",
+      "@type": "xsd:integer"
+    },
+    "totalPages": {
+      "@id": "itau:totalPages",
+      "@type": "xsd:integer"
+    },
+    "SharedAutomatedTellerMachinesAvailability": "itau:SharedAutomatedTellerMachinesAvailability",
+    "SharedAutomatedTellerMachinesPostalAddress": "itau:SharedAutomatedTellerMachinesPostalAddress",
+    "ResponseErrorMetaSingle": "itau:ResponseErrorMetaSingle",
+    "errors": {
+      "@id": "itau:errors",
+      "@container": "@list"
+    },
+    "ResponseError": "itau:ResponseError",
+    "ResponseDiscoveryStatusList": "itau:ResponseDiscoveryStatusList",
+    "ResponseDiscoveryOutageList": "itau:ResponseDiscoveryOutageList",
+    "Status": "itau:Status",
+    "explanation": {
+      "@id": "itau:explanation",
+      "@type": "xsd:string"
+    },
+    "detectionTime": {
+      "@id": "itau:detectionTime",
+      "@type": "xsd:string"
+    },
+    "expectedResolutionTime": {
+      "@id": "itau:expectedResolutionTime",
+      "@type": "xsd:string"
+    },
+    "updateTime": {
+      "@id": "itau:updateTime",
+      "@type": "xsd:string"
+    },
+    "unavailableEndpoints": {
+      "@id": "itau:unavailableEndpoints",
+      "@container": "@list"
+    },
+    "AccountsTermsConditions": "itau:AccountsTermsConditions",
+    "minimumBalance": {
+      "@id": "itau:minimumBalance",
+      "@type": "@id"
+    },
+    "elegibilityCriteriaInfo": {
+      "@id": "itau:elegibilityCriteriaInfo",
+      "@type": "xsd:string"
+    },
+    "closingProcessInfo": {
+      "@id": "itau:closingProcessInfo",
+      "@type": "xsd:string"
+    },
+    "ResponsePersonalAccounts": "itau:ResponsePersonalAccounts",
+    "PersonalData": "itau:PersonalData",
+    "fees": {
+      "@id": "itau:fees",
+      "@type": "@id"
+    },
+    "serviceBundles": {
+      "@id": "itau:serviceBundles",
+      "@container": "@list"
+    },
+    "openingClosingChannels": {
+      "@id": "itau:openingClosingChannels",
+      "@container": "@list"
+    },
+    "openingClosingChannelsAdditionalInfo": {
+      "@id": "itau:openingClosingChannelsAdditionalInfo",
+      "@type": "xsd:string"
+    },
+    "transactionMethods": {
+      "@id": "itau:transactionMethods",
+      "@container": "@list"
+    },
+    "termsConditions": {
+      "@id": "itau:termsConditions",
+      "@type": "@id"
+    },
+    "incomeRate": {
+      "@id": "itau:incomeRate",
+      "@type": "@id"
+    },
+    "AccountFee": "itau:AccountFee",
+    "priorityServices": {
+      "@id": "itau:priorityServices",
+      "@container": "@list"
+    },
+    "otherServices": {
+      "@id": "itau:otherServices",
+      "@container": "@list"
+    },
+    "AccountPriorityService": "itau:AccountPriorityService",
+    "chargingTriggerInfo": {
+      "@id": "itau:chargingTriggerInfo",
+      "@type": "xsd:string"
+    },
+    "prices": {
+      "@id": "itau:prices",
+      "@container": "@list"
+    },
+    "minimum": {
+      "@id": "itau:minimum",
+      "@type": "@id"
+    },
+    "maximum": {
+      "@id": "itau:maximum",
+      "@type": "@id"
+    },
+    "AccountType": "itau:AccountType",
+    "OpeningClosingChannels": "itau:OpeningClosingChannels",
+    "TransactionMethods": "itau:TransactionMethods",
+    "PriorityServiceName": "itau:PriorityServiceName",
+    "AccountOtherService": "itau:AccountOtherService",
+    "AccountPriorityServiceCode": "itau:AccountPriorityServiceCode",
+    "ServiceBundle": "itau:ServiceBundle",
+    "ServiceBundleServiceDetail": "itau:ServiceBundleServiceDetail",
+    "eventLimitQuantity": {
+      "@id": "itau:eventLimitQuantity",
+      "@type": "xsd:string"
+    },
+    "freeEventQuantity": {
+      "@id": "itau:freeEventQuantity",
+      "@type": "xsd:string"
+    },
+    "AccountsIncomeRate": "itau:AccountsIncomeRate",
+    "savingAccount": {
+      "@id": "itau:savingAccount",
+      "@type": "xsd:string"
+    },
+    "prepaidPaymentAccount": {
+      "@id": "itau:prepaidPaymentAccount",
+      "@type": "xsd:string"
+    },
+    "ResponseBusinessAccounts": "itau:ResponseBusinessAccounts",
+    "BusinessData": "itau:BusinessData",
+    "BusinessAccountsService": "itau:BusinessAccountsService",
+    "PriceIntervals": "itau:PriceIntervals",
+    "Price": "itau:Price",
+    "interval": {
+      "@id": "itau:interval",
+      "@type": "@id"
+    },
+    "value": {
+      "@id": "itau:value",
+      "@type": "xsd:string"
+    },
+    "currency": {
+      "@id": "itau:currency",
+      "@type": "@id"
+    },
+    "customers": {
+      "@id": "itau:customers",
+      "@type": "@id"
+    },
+    "PersonalAccountPriorityServicePrice": "itau:PersonalAccountPriorityServicePrice",
+    "MonthlyPrice": "itau:MonthlyPrice",
+    "monthlyFee": {
+      "@id": "itau:monthlyFee",
+      "@type": "xsd:string"
+    },
+    "MinimumPrice": "itau:MinimumPrice",
+    "PriorityServiceMinimumPrice": "itau:PriorityServiceMinimumPrice",
+    "MaximumPrice": "itau:MaximumPrice",
+    "PriorityServiceMaximumPrice": "itau:PriorityServiceMaximumPrice",
+    "Customer": "itau:Customer",
+    "rate": {
+      "@id": "itau:rate",
+      "@type": "xsd:string"
+    },
+    "MinimumBalance": "itau:MinimumBalance",
+    "ApplicationRate": "itau:ApplicationRate",
+    "indexer": {
+      "@id": "itau:indexer",
+      "@type": "@id"
+    },
+    "Indexer": "itau:Indexer",
+    "ApplicationIntervals": "itau:ApplicationIntervals",
+    "CreditCardIdentification": "itau:CreditCardIdentification",
+    "product": {
+      "@id": "itau:product"
+    },
+    "creditCard": {
+      "@id": "itau:creditCard"
+    },
+    "CreditCardRewardsProgram": "itau:CreditCardRewardsProgram",
+    "hasRewardProgram": {
+      "@id": "itau:hasRewardProgram",
+      "@type": "xsd:boolean"
+    },
+    "rewardProgramInfo": {
+      "@id": "itau:rewardProgramInfo",
+      "@type": "xsd:string"
+    },
+    "CreditCardTermsConditions": "itau:CreditCardTermsConditions",
+    "minimumFeeRate": {
+      "@id": "itau:minimumFeeRate",
+      "@type": "xsd:string"
+    },
+    "CreditCardInterest": "itau:CreditCardInterest",
+    "rates": {
+      "@id": "itau:rates",
+      "@container": "@list"
+    },
+    "instalmentRates": {
+      "@id": "itau:instalmentRates",
+      "@container": "@list"
+    },
+    "otherCredits": {
+      "@id": "itau:otherCredits",
+      "@container": "@list"
+    },
+    "RequiredWarranty": "itau:RequiredWarranty",
+    "CreditCardInterestRate": "itau:CreditCardInterestRate",
+    "codeAdditionalInfo": {
+      "@id": "itau:codeAdditionalInfo",
+      "@type": "xsd:string"
+    },
+    "PersonalCreditCardResponse": "itau:PersonalCreditCardResponse",
+    "PersonalCreditCardData": "itau:PersonalCreditCardData",
+    "rewardsProgram": {
+      "@id": "itau:rewardsProgram",
+      "@type": "@id"
+    },
+    "interest": {
+      "@id": "itau:interest",
+      "@type": "@id"
+    },
+    "requiredWarranties": {
+      "@id": "itau:requiredWarranties",
+      "@container": "@list"
+    },
+    "Participant": "itau:Participant",
+    "BusinessCreditCardResponse": "itau:BusinessCreditCardResponse",
+    "BusinessCreditCardData": "itau:BusinessCreditCardData",
+    "CreditCardService": "itau:CreditCardService",
+    "InterestRate": "itau:InterestRate",
+    "referentialRateIndexer": {
+      "@id": "itau:referentialRateIndexer",
+      "@type": "@id"
+    },
+    "applications": {
+      "@id": "itau:applications",
+      "@container": "@list"
+    },
+    "minimumRate": {
+      "@id": "itau:minimumRate",
+      "@type": "xsd:string"
+    },
+    "maximumRate": {
+      "@id": "itau:maximumRate",
+      "@type": "xsd:string"
+    },
+    "ReferentialRateIndexer": "itau:ReferentialRateIndexer",
+    "ResponsePersonalFinancings": "itau:ResponsePersonalFinancings",
+    "ResponsePersonalFinancingsData": "itau:ResponsePersonalFinancingsData",
+    "interestRates": {
+      "@id": "itau:interestRates",
+      "@container": "@list"
+    },
+    "FinancingService": "itau:FinancingService",
+    "FinancingInterestRate": "itau:FinancingInterestRate",
+    "ResponseBusinessFinancings": "itau:ResponseBusinessFinancings",
+    "BusinessFinancingData": "itau:BusinessFinancingData",
+    "Fee": "itau:Fee",
+    "ResponsePersonalInvoiceFinancings": "itau:ResponsePersonalInvoiceFinancings",
+    "PersonalInvoiceFinancingsData": "itau:PersonalInvoiceFinancingsData",
+    "InvoiceFinancingsService": "itau:InvoiceFinancingsService",
+    "PersonalInvoiceFinancingsInterestRates": "itau:PersonalInvoiceFinancingsInterestRates",
+    "ResponseBusinessInvoiceFinancings": "itau:ResponseBusinessInvoiceFinancings",
+    "BusinessInvoiceFinancingsData": "itau:BusinessInvoiceFinancingsData",
+    "InvoiceFinancingsFees": "itau:InvoiceFinancingsFees",
+    "BusinessInvoiceFinancingsInterestRates": "itau:BusinessInvoiceFinancingsInterestRates",
+    "ResponsePersonalLoans": "itau:ResponsePersonalLoans",
+    "ResponsePersonalLoansData": "itau:ResponsePersonalLoansData",
+    "ResponseBusinessLoans": "itau:ResponseBusinessLoans",
+    "ResponseBusinessLoansData": "itau:ResponseBusinessLoansData",
+    "LoanFees": "itau:LoanFees",
+    "LoanService": "itau:LoanService",
+    "LoanInterestRate": "itau:LoanInterestRate",
+    "ResponseBusinessUnarrangedAccountOverdraft": "itau:ResponseBusinessUnarrangedAccountOverdraft",
+    "BusinessUnarrangedAccountOverdraftData": "itau:BusinessUnarrangedAccountOverdraftData",
+    "BusinessUnarrangedAccountOverdraftFee": "itau:BusinessUnarrangedAccountOverdraftFee",
+    "UnarrangedAccountOverdraftService": "itau:UnarrangedAccountOverdraftService",
+    "UnarrangedAccountOverdraftRate": "itau:UnarrangedAccountOverdraftRate",
+    "ResponsePersonalUnarrangedAccountOverdraft": "itau:ResponsePersonalUnarrangedAccountOverdraft",
+    "PersonalUnarrangedAccountOverdraftData": "itau:PersonalUnarrangedAccountOverdraftData",
+    "PersonalUnarrangedAccountOverdraftFee": "itau:PersonalUnarrangedAccountOverdraftFee"
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Itaú Unibanco API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Itaú Unibanco's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-18) from openapi/itau-unibanco-open-finance-channels-openapi.yml, openapi/itau-unibanco-open-finance-common-openapi.yml, openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml.",
+  "dcterms:created": "2026-10-18",
+  "dcterms:source": [
+    "openapi/itau-unibanco-open-finance-channels-openapi.yml",
+    "openapi/itau-unibanco-open-finance-common-openapi.yml",
+    "openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml",
+    "openapi/itau-unibanco-open-finance-opendata-creditcards-openapi.yml",
+    "openapi/itau-unibanco-open-finance-opendata-financings-openapi.yml"
+  ]
+}

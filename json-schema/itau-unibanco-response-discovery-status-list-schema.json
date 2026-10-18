@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/itau-unibanco/main/json-schema/itau-unibanco-response-discovery-status-list-schema.json",
+  "title": "ResponseDiscoveryStatusList",
+  "x-generated": "2026-10-18",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/itau-unibanco-open-finance-common-openapi.yml#/components/schemas/ResponseDiscoveryStatusList",
+  "type": "object",
+  "required": [
+    "data",
+    "links",
+    "meta"
+  ],
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "type": "array",
+          "maxItems": 1000,
+          "items": {
+            "$ref": "#/$defs/Status"
+          }
+        }
+      }
+    },
+    "links": {
+      "$ref": "#/$defs/Links"
+    },
+    "meta": {
+      "$ref": "#/$defs/Meta"
+    }
+  },
+  "$defs": {
+    "Links": {
+      "type": "object",
+      "properties": {
+        "self": {
+          "type": "string",
+          "format": "url",
+          "description": "URL da página atualmente requisitada",
+          "maxLength": 2000
+        },
+        "first": {
+          "type": "string",
+          "format": "url",
+          "description": "URL da primeira página de registros",
+          "maxLength": 2000
+        },
+        "prev": {
+          "type": "string",
+          "format": "url",
+          "description": "URL da página anterior de registros",
+          "maxLength": 2000
+        },
+        "next": {
+          "type": "string",
+          "format": "url",
+          "description": "URL da próxima página de registros",
+          "maxLength": 2000
+        },
+        "last": {
+          "type": "string",
+          "format": "url",
+          "description": "URL da última página de registros",
+          "maxLength": 2000
+        }
+      }
+    },
+    "Meta": {
+      "type": "object",
+      "properties": {
+        "totalRecords": {
+          "type": "integer",
+          "description": "Total de registros encontrados"
+        },
+        "totalPages": {
+          "type": "integer",
+          "description": "Total de páginas para os registros encontrados"
+        }
+      },
+      "required": [
+        "totalRecords",
+        "totalPages"
+      ]
+    },
+    "Status": {
+      "type": "object",
+      "required": [
+        "code",
+        "explanation"
+      ],
+      "properties": {
+        "code": {
+          "type": "string",
+          "enum": [
+            "OK",
+            "PARTIAL_FAILURE",
+            "UNAVAILABLE",
+            "SCHEDULED_OUTAGE"
+          ],
+          "description": "Condição atual da Implementação das APIs do OFB:\n- OK - A implementação de todas as APIs foi concluída e está totalmente funcional \n- UNAVAILABLE - Uma ou mais APIs estão indisponíveis \n- PARTIAL_FAILURE - Um ou mais endpoints estão indisponíveis \n- SCHEDULED_OUTAGE - Uma interrupção programada (anunciada pelo endpoint /outages) está em vigor \n\nA hierarquia de `data/status/code`, em casos concomitantes, segue a ordem conforme os bullets acima (OK, UNAVAILABLE, PARTIAL_FAILURE, SCHEDULED_OUTAGE)\n"
+        },
+        "explanation": {
+          "type": "string",
+          "description": "Fornece uma explicação da interrupção atual que pode ser exibida para um cliente final. Será obrigatoriamente preenchido se code tiver algum valor que não seja OK",
+          "pattern": "^(?!\\s)[\\w\\W\\s]*[^\\s]$",
+          "maxLength": 2000
+        },
+        "detectionTime": {
+          "type": "string",
+          "description": "A data e hora em que a interrupção atual foi detectada. Será obrigatoriamente preenchido se a propriedade code for PARTIAL_FAILURE ou UNAVAILABLE",
+          "pattern": "^(\\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\\d|2[0123]):(?:[012345]\\d):(?:[012345]\\d)Z$",
+          "maxLength": 20
+        },
+        "expectedResolutionTime": {
+          "type": "string",
+          "description": "A data e hora em que o serviço completo deve continuar (se conhecido). Será obrigatoriamente preenchido se code tiver algum valor que não seja OK",
+          "pattern": "^(\\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\\d|2[0123]):(?:[012345]\\d):(?:[012345]\\d)Z$",
+          "maxLength": 20
+        },
+        "updateTime": {
+          "type": "string",
+          "description": "A data e hora em que esse status foi atualizado pela última vez pelo titular dos dados.",
+          "pattern": "^(\\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\\d|2[0123]):(?:[012345]\\d):(?:[012345]\\d)Z$",
+          "maxLength": 20
+        },
+        "unavailableEndpoints": {
+          "type": "array",
+          "description": "Endpoints com indisponibilidade",
+          "maxItems": 1000,
+          "items": {
+            "type": "string",
+            "maxLength": 2000
+          }
+        }
+      }
+    }
+  }
+}

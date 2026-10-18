@@ -1,0 +1,12 @@
+generated: '2026-10-18'
+method: searched
+source: https://devportal.itau.com.br/conheca-o-portal
+description: 'Sandbox environment available for testing integrations'
+docs: 'Sandbox access requires login and is mentioned in documentation: "O Itaú disponibiliza um ambiente seguro de sandbox para você validar chamadas e garantir previsibilidade na integração."'
+access: 'Requires account creation and login to developer portal'
+test_values:
+  cards: Not documented publicly
+  bank_accounts: Not documented publicly
+  tokens: 'Dynamic certificates required for OAuth 2.0 with mTLS'
+  test_clocks: Not documented publicly
+note: 'Sandbox environment exists but details require login to access. Documentation states: "Para acessar as documentações completas e o Sandbox é necessário ter uma conta no portal."'

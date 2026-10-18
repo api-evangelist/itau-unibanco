@@ -1,0 +1,120 @@
+generated: '2026-10-18'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 9
+  own: 4
+  other_domain: 2
+  platform: 3
+  roles:
+  - api
+  - other
+  - portal
+  - source
+  - website
+hosts:
+- host: api.com.br
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: api.com.br
+  role: api
+  relation: other-domain
+- host: api.itau
+  found_by:
+  - apis[]
+  - vendor-detect
+  types: []
+  serves:
+  - api
+  - api-gateway
+  vendor: aws-api-gateway
+  registrable_domain: api.itau
+  role: api
+  relation: other-domain
+- host: api.itau.com.br
+  found_by:
+  - apis[]
+  types: []
+  serves:
+  - api
+  registrable_domain: itau.com.br
+  role: api
+  relation: own
+- host: devportal.itau.com.br
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - StatusPage
+  - DeveloperPortal
+  - Documentation
+  - GettingStarted
+  - Support
+  - SignUp
+  - Login
+  - TermsOfService
+  - PrivacyPolicy
+  serves:
+  - docs
+  - cdn
+  vendor: cloudfront
+  registrable_domain: itau.com.br
+  role: portal
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: itau.com.br
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: itau.com.br
+  role: other
+  relation: own
+- host: twitter.com
+  found_by:
+  - pointer
+  types:
+  - Twitter
+  serves: []
+  registrable_domain: twitter.com
+  role: other
+  relation: platform
+- host: www.itau.com.br
+  found_by:
+  - pointer
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: akamai
+  registrable_domain: itau.com.br
+  role: website
+  relation: own
+- host: www.youtube.com
+  found_by:
+  - pointer
+  types:
+  - YouTube
+  serves: []
+  registrable_domain: youtube.com
+  role: other
+  relation: platform

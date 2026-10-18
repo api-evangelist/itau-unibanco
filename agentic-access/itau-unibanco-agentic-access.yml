@@ -1,0 +1,187 @@
+generated: '2026-10-18'
+method: generated
+source: openapi/itau-unibanco-open-finance-channels-openapi.yml, openapi/itau-unibanco-open-finance-common-openapi.yml,
+  openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml, openapi/itau-unibanco-open-finance-opendata-creditcards-openapi.yml,
+  openapi/itau-unibanco-open-finance-opendata-financings-openapi.yml, openapi/itau-unibanco-open-finance-opendata-invoicefinancings-openapi.yml,
+  openapi/itau-unibanco-open-finance-opendata-loans-openapi.yml, openapi/itau-unibanco-open-finance-opendata-unarranged-openapi.yml
+description: Recommended x-agentic-access execution contracts, classified heuristically from
+  the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
+  audience per deployment. See research/curity/agentic-governance/.
+summary:
+  operations: 17
+  by_action_class:
+    connected: 17
+  by_consequence:
+    read: 17
+  human_in_the_loop_required: 0
+operations:
+- path: /banking-agents
+  method: get
+  operationId: getBankingAgents
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /branches
+  method: get
+  operationId: getBranches
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /electronic-channels
+  method: get
+  operationId: getElectronicChannels
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /phone-channels
+  method: get
+  operationId: getPhoneChannels
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /status
+  method: get
+  operationId: getStatus
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /outages
+  method: get
+  operationId: getOutage
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /personal-accounts
+  method: get
+  operationId: getPersonalAccounts
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /business-accounts
+  method: get
+  operationId: getBusinessAccounts
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /personal-credit-cards
+  method: get
+  operationId: getPersonalCreditCards
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /business-credit-cards
+  method: get
+  operationId: getBusinessCreditCards
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /personal-financings
+  method: get
+  operationId: getPersonalFinancings
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /business-financings
+  method: get
+  operationId: getBusinessFinancings
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /business-invoice-financings
+  method: get
+  operationId: getBusinessInvoiceFinancings
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /personal-loans
+  method: get
+  operationId: getPersonalLoans
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /business-loans
+  method: get
+  operationId: getBusinessLoans
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /personal-unarranged-account-overdraft
+  method: get
+  operationId: getPersonalUnarrangedAccountOverdraft
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /business-unarranged-account-overdraft
+  method: get
+  operationId: getBusinessUnarrangedAccountOverdraft
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none

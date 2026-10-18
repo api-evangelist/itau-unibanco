@@ -1,0 +1,181 @@
+type: MCPServer
+name: Itaú Unibanco MCP (candidate)
+generated: '2026-10-18'
+method: derived
+source: openapi/ (8 Open Finance Brasil open-data specs) + web search 2026-10-18
+status: candidate
+deployment:
+  mode: none
+  auth: none
+  verified: derived
+official_server:
+  found: false
+  evidence: Web search 2026-10-18 found no Itaú-published MCP server; https://devportal.itau.com.br/.well-known/mcp.json
+    returned 404; devportal.itau.com.br/mcp returns the SPA shell (200 for every path),
+    not an MCP endpoint.
+third_party:
+- name: '@codespar/mcp-itau'
+  official: false
+  registry: npm
+  url: https://www.npmjs.com/package/@codespar/mcp-itau
+  version: 0.2.0-alpha.3
+  published: '2026-06-22'
+  transport: stdio
+  install: npx -y @codespar/mcp-itau
+  description: 'Community server by CodeSpar (not Itaú): Pix, Cobrança (boleto), Arrecadação,
+    Extrato via Itaú Developer Portal APIs (OAuth2 + mTLS). Listed at https://www.getdrio.com/mcp/io-github-codespar-mcp-itau;
+    tools not verified.'
+tools:
+- name: get_banking_agents
+  description: Obtém a lista de correspondentes bancários da instituição financeira.
+  operationId: getBankingAgents
+  method: GET
+  path: /banking-agents
+  baseURL: https://api.itau/open-banking/channels/v2
+  openapi: openapi/itau-unibanco-open-finance-channels-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_branches
+  description: Obtém a lista de dependências próprias da instituição financeira.
+  operationId: getBranches
+  method: GET
+  path: /branches
+  baseURL: https://api.itau/open-banking/channels/v2
+  openapi: openapi/itau-unibanco-open-finance-channels-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_electronic_channels
+  description: Obtém a lista de canais eletrônicos de atendimento da instituição financeira.
+  operationId: getElectronicChannels
+  method: GET
+  path: /electronic-channels
+  baseURL: https://api.itau/open-banking/channels/v2
+  openapi: openapi/itau-unibanco-open-finance-channels-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_phone_channels
+  description: Obtém a lista de canais telefônicos de atendimento da instituição financeira.
+  operationId: getPhoneChannels
+  method: GET
+  path: /phone-channels
+  baseURL: https://api.itau/open-banking/channels/v2
+  openapi: openapi/itau-unibanco-open-finance-channels-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_status
+  description: Descrição do status da implementação das APIs do OFB
+  operationId: getStatus
+  method: GET
+  path: /status
+  baseURL: https://api.itau/open-banking/discovery/v2
+  openapi: openapi/itau-unibanco-open-finance-common-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query)
+- name: get_outage
+  description: a descrição referente ao código de status retornado pelas APIs
+  operationId: getOutage
+  method: GET
+  path: /outages
+  baseURL: https://api.itau/open-banking/discovery/v2
+  openapi: openapi/itau-unibanco-open-finance-common-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query)
+- name: get_personal_accounts
+  description: Obtém dados das contas pessoa natural
+  operationId: getPersonalAccounts
+  method: GET
+  path: /personal-accounts
+  baseURL: https://api.itau/open-banking/opendata-accounts/v1
+  openapi: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_business_accounts
+  description: Obtém dados das contas pessoa jurídica
+  operationId: getBusinessAccounts
+  method: GET
+  path: /business-accounts
+  baseURL: https://api.itau/open-banking/opendata-accounts/v1
+  openapi: openapi/itau-unibanco-open-finance-opendata-accounts-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_personal_credit_cards
+  description: Obtém dados sobre cartões de crédito pessoa natural
+  operationId: getPersonalCreditCards
+  method: GET
+  path: /personal-credit-cards
+  baseURL: https://api.itau/open-banking/opendata-creditcards/v1
+  openapi: openapi/itau-unibanco-open-finance-opendata-creditcards-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_business_credit_cards
+  description: Obtém dados sobre cartões de crédito pessoa jurídica
+  operationId: getBusinessCreditCards
+  method: GET
+  path: /business-credit-cards
+  baseURL: https://api.itau/open-banking/opendata-creditcards/v1
+  openapi: openapi/itau-unibanco-open-finance-opendata-creditcards-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_personal_financings
+  description: Obtém a lista de Financiamentos de Pessoa Natural.
+  operationId: getPersonalFinancings
+  method: GET
+  path: /personal-financings
+  baseURL: https://api.itau/open-banking/opendata-financings/v1
+  openapi: openapi/itau-unibanco-open-finance-opendata-financings-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_business_financings
+  description: Obtém a lista de Financiamentos de Pessoa Jurídica.
+  operationId: getBusinessFinancings
+  method: GET
+  path: /business-financings
+  baseURL: https://api.itau/open-banking/opendata-financings/v1
+  openapi: openapi/itau-unibanco-open-finance-opendata-financings-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_business_invoice_financings
+  description: Obtém a lista de Direitos Creditórios Descontados de Pessoa Jurídica.
+  operationId: getBusinessInvoiceFinancings
+  method: GET
+  path: /business-invoice-financings
+  baseURL: https://api.itau/open-banking/opendata-invoicefinancings/v1
+  openapi: openapi/itau-unibanco-open-finance-opendata-invoicefinancings-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_personal_loans
+  description: Obtém dados sobre empréstimos pessoa natural
+  operationId: getPersonalLoans
+  method: GET
+  path: /personal-loans
+  baseURL: https://api.itau/open-banking/opendata-loans/v1
+  openapi: openapi/itau-unibanco-open-finance-opendata-loans-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_business_loans
+  description: Obtém dados sobre empréstimos pessoa jurídica
+  operationId: getBusinessLoans
+  method: GET
+  path: /business-loans
+  baseURL: https://api.itau/open-banking/opendata-loans/v1
+  openapi: openapi/itau-unibanco-open-finance-opendata-loans-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_personal_unarranged_account_overdraft
+  description: Obtém a lista de adiantamento de depositante de Pessoa Natural.
+  operationId: getPersonalUnarrangedAccountOverdraft
+  method: GET
+  path: /personal-unarranged-account-overdraft
+  baseURL: https://api.itau/open-banking/opendata-unarranged/v1
+  openapi: openapi/itau-unibanco-open-finance-opendata-unarranged-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination
+- name: get_business_unarranged_account_overdraft
+  description: Obtém a lista de adiantamento de depositante de Pessoa Jurídica.
+  operationId: getBusinessUnarrangedAccountOverdraft
+  method: GET
+  path: /business-unarranged-account-overdraft
+  baseURL: https://api.itau/open-banking/opendata-unarranged/v1
+  openapi: openapi/itau-unibanco-open-finance-opendata-unarranged-openapi.yml
+  readOnly: true
+  inputs: page, page-size (query) per Open Finance Brasil pagination

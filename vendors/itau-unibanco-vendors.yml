@@ -1,0 +1,63 @@
+generated: '2026-10-18'
+method: probed
+source: pre-flight dossier (docs platform, portal detections) + CNAME chains and response headers of the hosts apis.yml names
+registry: all/0-working/vendors.yml
+areas_vocabulary:
+- documentation
+- developer-portal
+- api-gateway
+- cdn
+- hosting
+- sdk-generation
+- api-collections
+- status-page
+- support
+- community
+- identity
+- mcp-hosting
+vendors:
+- vendor: aws-api-gateway
+  name: Amazon API Gateway
+  area: api-gateway
+  host: api.itau
+  evidence: header:x-amz-apigw-id
+  signal: header
+  confidence: high
+  kin_score: []
+- vendor: akamai
+  name: Akamai
+  area: cdn
+  host: www.itau.com.br
+  evidence: cname:akamaiedge.net
+  signal: cname
+  confidence: high
+  kin_score: []
+- vendor: cloudfront
+  name: Amazon CloudFront
+  area: cdn
+  host: devportal.itau.com.br
+  evidence: header:x-amz-cf-id
+  signal: header
+  confidence: high
+  kin_score: []
+reliance:
+  areas_vendor_served:
+  - api-gateway
+  - cdn
+  vendor_count: 3
+  areas_observed: 12
+  share_of_observable_areas: 0.167
+  note: areas where a third party was DETECTED serving this provider; an area absent here was either self-run or not observed, and this script
+    cannot tell those apart
+checked:
+- 'docs-platform: no-docs-host'
+- devportal.itau.com.br (StatusPage)
+- www.itau.com.br (Website)
+- devportal.itau.com.br (DeveloperPortal)
+- devportal.itau.com.br (Documentation)
+- devportal.itau.com.br (GettingStarted)
+- devportal.itau.com.br (Support)
+- devportal.itau.com.br (SignUp)
+- devportal.itau.com.br (Login)
+- api.itau (baseURL)
+- api.itau.com.br (baseURL)

@@ -1,0 +1,39 @@
+overlay: 1.0.0
+info:
+  title: Itaú Unibanco API OpenData Channels do Open Finance Brasil overlay
+  version: 1.0.0
+extends: ../openapi/_original/itau-unibanco-open-finance-channels-openapi.yml
+x-generated: '2026-10-18'
+x-method: generated
+actions:
+- target: $.info
+  update:
+    x-provider: Itaú Unibanco
+    x-provider-slug: itau-unibanco
+    x-standard: Open Finance Brasil (OpenBanking-Brasil/openapi)
+    x-api-evangelist-note: Itaú implements the Open Finance Brasil standard contract; this overlay annotates the standard spec, it does not modify
+      it.
+- target: $.paths['/banking-agents'].get
+  update:
+    x-agent-tool-name: get_banking_agents
+    x-agent-read-only: true
+    x-agent-auth: none declared (spec defines APIKey schemes but applies no security requirement)
+    x-idempotent: true
+- target: $.paths['/branches'].get
+  update:
+    x-agent-tool-name: get_branches
+    x-agent-read-only: true
+    x-agent-auth: none declared (spec defines APIKey schemes but applies no security requirement)
+    x-idempotent: true
+- target: $.paths['/electronic-channels'].get
+  update:
+    x-agent-tool-name: get_electronic_channels
+    x-agent-read-only: true
+    x-agent-auth: none declared (spec defines APIKey schemes but applies no security requirement)
+    x-idempotent: true
+- target: $.paths['/phone-channels'].get
+  update:
+    x-agent-tool-name: get_phone_channels
+    x-agent-read-only: true
+    x-agent-auth: none declared (spec defines APIKey schemes but applies no security requirement)
+    x-idempotent: true

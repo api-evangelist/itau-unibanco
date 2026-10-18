@@ -1,0 +1,38 @@
+generated: '2026-10-18'
+method: searched
+source: https://devportal.itau.com.br/nossas-apis/openfinance, openapi/ specifications
+authentication:
+  style: API keys for Open Finance APIs; OAuth 2.0 Client Credentials with mTLS for other APIs
+  location: Query parameters for API keys; Bearer tokens with mTLS for OAuth
+idempotency:
+  coverage: none
+  evidence: No idempotency mechanisms found in OpenAPI specifications or public documentation
+pagination:
+  style: offset-based
+  parameters:
+  - page
+  - pageSize
+  response_fields:
+  - data
+  - links
+  - meta
+  evidence: Open Finance APIs use page and pageSize parameters with standardized response structure
+error_handling:
+  format: Standard HTTP status codes with JSON error responses
+  envelope: Not documented in public Open Finance specifications
+  evidence: OpenAPI specs define standard error responses (400, 404, 405, 429, 500, 504, 529)
+versioning:
+  scheme: url-versioning
+  header: none
+  evidence: 'API URLs include version segments: /v1/, /v2/'
+rate_limits:
+  signaling: 429 status code for rate limiting
+  headers: Not documented in public specifications
+  evidence: OpenAPI specs include 429 (TooManyRequests) response definition
+reversibility:
+  coverage: na
+  evidence: Open Finance APIs are read-only open data APIs with no write operations
+  operations: []
+  window: null
+note: Conventions derived from Open Finance Brasil standard specifications. Other APIs (Pix, payments,
+  etc.) require login to access documentation.

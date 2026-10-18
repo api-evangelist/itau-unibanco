@@ -1,0 +1,25 @@
+generated: '2026-10-18'
+method: none
+source:
+- https://zapier.com/apps/itau-unibanco/integrations
+- https://zapier.com/apps/ita-unibanco/integrations
+- https://n8n.io/integrations/itau-unibanco/
+- https://composio.dev/toolkits/itau-unibanco
+- https://monid.ai/tools/itau-unibanco
+checked:
+- https://composio.dev/toolkits/itau-unibanco
+- https://devportal.itau.com.br/
+- https://github.com/itau
+- https://make.com/en/integrations/itau (404)
+- https://monid.ai/tools/itau-unibanco
+- https://n8n.io/integrations/itau (404)
+- https://n8n.io/integrations/itau-unibanco/
+- https://zapier.com/apps/ita-unibanco/integrations
+- https://zapier.com/apps/itau (404)
+- https://zapier.com/apps/itau-unibanco/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: No integration marketplace listings found. Developer portal focuses on direct API integration rather than
+  marketplace apps. Itaú is Brazil's largest private bank with enterprise-focused API offerings.
